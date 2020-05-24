@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolioreact2020/static/css/main.7cc74e86.chunk.css",
+    "main.js": "/portfolioreact2020/static/js/main.043e7443.chunk.js",
+    "main.js.map": "/portfolioreact2020/static/js/main.043e7443.chunk.js.map",
+    "runtime-main.js": "/portfolioreact2020/static/js/runtime-main.8d6ff0cb.js",
+    "runtime-main.js.map": "/portfolioreact2020/static/js/runtime-main.8d6ff0cb.js.map",
+    "static/js/2.a792262c.chunk.js": "/portfolioreact2020/static/js/2.a792262c.chunk.js",
+    "static/js/2.a792262c.chunk.js.map": "/portfolioreact2020/static/js/2.a792262c.chunk.js.map",
+    "index.html": "/portfolioreact2020/index.html",
+    "precache-manifest.987e696a000bc8f5ceb17bd32db83dc0.js": "/portfolioreact2020/precache-manifest.987e696a000bc8f5ceb17bd32db83dc0.js",
+    "service-worker.js": "/portfolioreact2020/service-worker.js",
+    "static/css/main.7cc74e86.chunk.css.map": "/portfolioreact2020/static/css/main.7cc74e86.chunk.css.map",
+    "static/js/2.a792262c.chunk.js.LICENSE.txt": "/portfolioreact2020/static/js/2.a792262c.chunk.js.LICENSE.txt",
+    "static/media/clock05.png": "/portfolioreact2020/static/media/clock05.f669a67f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d6ff0cb.js",
+    "static/js/2.a792262c.chunk.js",
+    "static/css/main.7cc74e86.chunk.css",
+    "static/js/main.043e7443.chunk.js"
+  ]
+}
