@@ -23,7 +23,7 @@ class Works extends Component {
         },
         {
           id: 3,
-          name: "Miscelleneorus",
+          name: "Miscelleneous",
           description: "mis",
           imageUrl: "mis"
         }
@@ -35,7 +35,7 @@ class Works extends Component {
   render(){
     const categories = this.works.categories.map( work =>
       <Link className="nav-link col-lg-4 col-md-6 col-12" to={process.env.PUBLIC_URL + "/works/" + work.name.toLowerCase()}>
-        <div className="cover-img" Style="background-image:url('https://manablog.org/wp-content/uploads/2016/11/top-img.jpg');">
+        <div className="cover-img pt-5 pb-5" Style="background-image:url('https://manablog.org/wp-content/uploads/2016/11/top-img.jpg');">
           <div className="about-text">
             <h3>{work.name}</h3>
             <p>{work.description}</p>

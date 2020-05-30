@@ -7,12 +7,19 @@ class Interests extends React.Component {
     return(
       <div className="container mt-4">
         <h1>Interests</h1>
-        <h2>Intro.</h2>
-        <ul>
-            <li>Name: Yu Ohno（大野 優）</li>
-            <li>Birthday: December 26, 1996</li>
-            <li>Blood Type: AB</li>
-        </ul>
+        
+        <div className="mb-5">
+          <h3>Spread the charm of "Shodo"</h3>
+          <p>Now Writing...</p>
+        </div>
+        <div className="mb-5">
+          <h3>How do we reduce the tiresome for working?</h3>
+          <p>Now Writing...</p>
+        </div>
+        <div className="mb-5">
+          <h3>Fashion in Watchface art</h3>
+          <p>Now Writing...</p>
+        </div>        
         
       </div>
       

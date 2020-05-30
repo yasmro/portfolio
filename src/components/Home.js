@@ -4,9 +4,12 @@ class Home extends Component {
   render(){
     return(
       <div className="vh-100 bg-dark" Style="margin-top: -56px;">
-        <div className="pt-5 pl-5">
-          <h1>Yu Ohno's Portfolio</h1>
-          <h2>Move Emotion</h2>
+        <div className="position-absolute pl-5 container text-white" Style = "top: calc(50vh - 56px);">
+          <div className = "mb-4">
+            <h1>Yu Ohno's Portfolio</h1>
+            <h2>Move Emotion</h2>
+          </div>
+          <p>Hi, I'm Yu Ohno from Japan and post-support engineer (mainly) , calligrapher, artist and designer. </p>
         </div>
       </div>
     )
