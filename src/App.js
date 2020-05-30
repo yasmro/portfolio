@@ -7,6 +7,7 @@ import NavBar from './components/NavBar'
 import Home from './components/Home'
 import About from './components/About'
 import Works from './components/Works'
+import Interests from './components/Interests'
 import Contact from './components/Contact'
 import Worklist from './components/Worklist'
 
@@ -20,13 +21,14 @@ function App() {
     ReactDOM.render(
       <BrowserRouter>
         <NavBar />
-        <div className="">
+        <div className="" Style="padding-top: 56px;">
           <Switch>
-            <Route exact path={ process.env.PUBLIC_URL + '/'} component={Home}/>
-            <Route exact path={ process.env.PUBLIC_URL + '/about'}  component={About}/>
+            <Route exact path={ process.env.PUBLIC_URL + '/'} component={Home} Style="padding-top: 0px;"/>
+            <Route exact path={ process.env.PUBLIC_URL + '/about'}  component={About} />
             <Route exact path={ process.env.PUBLIC_URL + '/works/'}  component={Works}/>
               <Route exact path={ process.env.PUBLIC_URL + '/works/:category'} component={Worklist}/>
               <Route exact path={ process.env.PUBLIC_URL + '/works/:category/:name'} component={Worklist}/>
+              <Route exact path={ process.env.PUBLIC_URL + '/interests/'}  component={Interests}/>
             <Route exact path={ process.env.PUBLIC_URL + '/contact'}  component={Contact}/>
             <Route component={NoMatch}/>
           </Switch>

@@ -8,13 +8,15 @@ class About extends React.Component {
       <div className="container mt-4">
         <h1>About</h1>
         <h2>Intro.</h2>
-            <ul>
-                <li>Name: Yu Ohno（大野 優）</li>
-                <li>Birthday: December 26, 1996</li>
-                <li>Blood Type: AB</li>
-            </ul>
-        <h2>Career</h2>
-        <div className = "contents-works">
+        <ul>
+            <li>Name: Yu Ohno（大野 優）</li>
+            <li>Birthday: December 26, 1996</li>
+            <li>Blood Type: AB</li>
+        </ul>
+
+        <div className="mt-5">
+            <h2>Career</h2>
+            <div className = "contents-works">
             <div className="resume-date">
                 <span className="resume-date">April 2019 – Now</span>
             </div> 
@@ -38,7 +40,7 @@ class About extends React.Component {
               <p>Advanced Information Engineering course / Bachelor Degree (Engineering)</p>
               <button type="button" class="btn btn-light border-dark btn-sm" data-toggle="collapse" data-target="#projectDetail" aria-expanded="false" aria-controls="collapseExample">
                   Detail
-            </button>
+                </button>
             <div class="collapse mt-2" id="projectDetail">
 
               <h5>Projects</h5>
@@ -65,6 +67,8 @@ class About extends React.Component {
               <h3>National Institute of Technology, Nara College</h3>
               <p>Dept. Information Engineering / Associate Degree</p>
             </div>
+        </div>
+        
       </div>
       
       )
