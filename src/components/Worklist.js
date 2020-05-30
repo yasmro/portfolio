@@ -14,7 +14,13 @@ class Worklist extends React.Component {
     }
 
     return(
-      <div className="container mt-1">
+      <div className="container mt-4">
+        <nav aria-label="breadcrumb">
+          <ol className="breadcrumb bg-white pl-0">
+            <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/"}>Works</Link></li>
+            <li className="breadcrumb-item active" aria-current="page">{category}</li>
+          </ol>
+        </nav>
         <h2>{category}</h2>
         <p>{category_desc}</p>
           <div className="row">

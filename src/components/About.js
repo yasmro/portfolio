@@ -36,7 +36,7 @@ class About extends React.Component {
               </div>
               <h3>National Institute of Technology, Nara College</h3>
               <p>Advanced Information Engineering course / Bachelor Degree (Engineering)</p>
-              <button type="button" class="btn btn-light border-dark btn-s" data-toggle="collapse" data-target="#projectDetail" aria-expanded="false" aria-controls="collapseExample">
+              <button type="button" class="btn btn-light border-dark btn-sm" data-toggle="collapse" data-target="#projectDetail" aria-expanded="false" aria-controls="collapseExample">
                   Detail
             </button>
             <div class="collapse mt-2" id="projectDetail">
@@ -66,7 +66,8 @@ class About extends React.Component {
               <p>Dept. Information Engineering / Associate Degree</p>
             </div>
       </div>
-    )
+      
+      )
   }
 }
 

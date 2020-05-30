@@ -6,12 +6,18 @@ class NavBar extends Component {
     return(
       <div className="">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <ul className="navbar-nav mr-auto">
-              <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
-              <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
-              <li className="nav-item"><Link className="nav-link" to="/works">Works</Link></li>
-              <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
-          </ul>
+          <Link className="navbar-brand" to={process.env.PUBLIC_URL + "/"}>Yu Ohno</Link>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul className="navbar-nav mr-auto">
+                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/"}>Home</Link></li>
+                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/about"}>About</Link></li>
+                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/works"}>Works</Link></li>
+                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></li>
+            </ul>
+          </div>
         </nav>
       </div>
 
