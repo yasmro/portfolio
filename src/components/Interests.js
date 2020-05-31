@@ -5,8 +5,8 @@ import '../style.css';
 class Interests extends React.Component {
   render(){
     return(
-      <div className="container mt-4">
-        <h1>Interests</h1>
+      <div className="container mt-5">
+        <h1 className="mb-5">Interests</h1>
         
         <div className="mb-5">
           <h3>Spread the charm of "Shodo"</h3>

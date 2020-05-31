@@ -45,8 +45,8 @@ class Works extends Component {
     )
 
     return(
-      <div className="container mt-4">
-        <h1>Works</h1>
+      <div className="container mt-5">
+        <h1 className="mb-5">Works</h1>
         <div className="">
           <div className="row">
             {categories}

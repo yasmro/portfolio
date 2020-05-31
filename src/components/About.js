@@ -5,8 +5,8 @@ import '../style.css';
 class About extends React.Component {
   render(){
     return(
-      <div className="container mt-4">
-        <h1>About</h1>
+      <div className="container mt-5">
+        <h1 className="mb-5">About</h1>
         <h2>Intro.</h2>
         <ul>
             <li>Name: Yu Ohno（大野 優）</li>
