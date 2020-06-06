@@ -10,6 +10,7 @@ import Works from './components/Works'
 import Interests from './components/Interests'
 import Contact from './components/Contact'
 import Worklist from './components/Worklist'
+import WorkDetail from './components/WorkDetail'
 
 function App() {
   var url = window.location.href;
@@ -27,7 +28,7 @@ function App() {
             <Route exact path={ process.env.PUBLIC_URL + '/about'}  component={About} />
             <Route exact path={ process.env.PUBLIC_URL + '/works/'}  component={Works}/>
               <Route exact path={ process.env.PUBLIC_URL + '/works/:category'} component={Worklist}/>
-              <Route exact path={ process.env.PUBLIC_URL + '/works/:category/:name'} component={Worklist}/>
+              <Route exact path={ process.env.PUBLIC_URL + '/works/:category/:id'} component={WorkDetail}/>
               <Route exact path={ process.env.PUBLIC_URL + '/interests/'}  component={Interests}/>
             <Route exact path={ process.env.PUBLIC_URL + '/contact'}  component={Contact}/>
             <Route component={NoMatch}/>

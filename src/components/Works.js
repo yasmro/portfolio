@@ -1,30 +1,28 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
-import Shodo from './Worklist'
-import Watchface from './Watchface'
 
 class Works extends Component {
   constructor() {
     super();
-    this.works = {
-      categories: [
+    this.state = {
+      works: [
         {
-          id: 1,
+          id: "shodo",
           name: "Shodo",
-          description: "shodo",
-          imageUrl: "shodo"
+          description: "Experienced since 2009 and took 20+ awards on Japanese calligraphy concours before.",
+          imageUrl: "shodo",
         },
         {
-          id: 2,
+          id: "watchface",
           name: "Watchface",
-          description: "wf",
+          description: "Design and Develop with XML, CSS and JavaScript on Fitbit Ionic",
           imageUrl: "watchface"
         },
         {
-          id: 3,
+          id: "miscelleneous",
           name: "Miscelleneous",
-          description: "mis",
+          description: "Others",
           imageUrl: "mis"
         }
       ]
@@ -33,9 +31,9 @@ class Works extends Component {
 
 
   render(){
-    const categories = this.works.categories.map( work =>
-      <Link className="nav-link col-lg-4 col-md-6 col-12" to={process.env.PUBLIC_URL + "/works/" + work.name.toLowerCase()}>
-        <div className="cover-img pt-5 pb-5" Style="background-image:url('https://manablog.org/wp-content/uploads/2016/11/top-img.jpg');">
+    const categories = this.state.works.map( work =>
+      <Link className="nav-link col-lg-4 col-md-6 col-12" to={process.env.PUBLIC_URL + "/works/" + work.id}>
+        <div className="cover-img pt-5 pb-5" Style="background-image:url('../images/shodo/1.png');">
           <div className="about-text">
             <h3>{work.name}</h3>
             <p>{work.description}</p>

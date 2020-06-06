@@ -14,5 +14,14 @@
 } */
 
 *{
-  font-family: dnp-shuei-gothic-kin-std, a-otf-ud-shin-go-pr6n,sans-serif;
+  font-family: dnp-shuei-gothic-kin-std, bebas-neue-pro-semiexpanded, a-otf-ud-shin-go-pr6n,sans-serif;
+}
+
+h1{
+  font-family: adobe-handwriting-frank;
+}
+
+p, dd, li{
+  font-family: dnp-shuei-gothic-kin-std, bebas-neue-pro-semiexpanded;
+  color: #808080;
 }

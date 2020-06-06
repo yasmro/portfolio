@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
+import '../style.css';
 
-class Worklist extends React.Component {
+class WorkDetail extends React.Component {
+
   constructor() {
     super();
     this.state = {
-      isLoading: false,
-      hasError: false,
       works: {
         shodo: {
           id: "shodo",
@@ -93,70 +92,30 @@ class Worklist extends React.Component {
     };
   }
 
-  fetchData(url){
-    this.setState({isLoading: true})
-
-    fetch(url)
-      .then((response) => {
-        // responseのokプロパティでアクセスの判定をします。trueの場合は正常にアクセスできているので、isLoadingをfalseにします。
-        console.log(response)
-        if(!response.ok){
-          throw Error(response.statusText)
-        }
-        this.setState({ isLoading: false })
-        return response
-      })
-      .then(
-        (response) => response.json()
-        // .json()メソッドでresponseがjsonであることを定義します。一行のアロー関数なので自動的にreturnされています。
-      )
-      .then((data) => {
-        // 渡されたjsonデータをもとにtodoを組み立てています。Object.assign()は第1引数を{}とすることで、第２引数以降をmerge(結合)した新しいObjectを生成します
-        console.log(data)
-        const w = data
-        this.setState({ works: w })
-        console.log("3");
-      })
-      .catch(() => this.setState({ hasError: true }))
-
-  }
-
-  componentDidMount() {
-    this.fetchData('data.json');
-  }
-
   render(){
-
     const category_id = this.props.match.params.category;
+    const id = this.props.match.params.id - 1;
     const category = this.state.works[category_id];
+    const work = category.portfolios[id];
 
-    const works = this.state.works[category_id].portfolios.map( work =>
-      <Link className="nav-link col-lg-4 col-md-6 col-12" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + work.id}>
-        <div className="cover-img pb-5 thumbnail">
-          <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" className = "bwWrapper pb-1 w-100"/>
-          <div className="about-text">
-            <h4>{work.title}</h4>
-          </div>
-        </div>
-      </Link>
-    )
-
+    
+    
     return(
       <div className="container mt-5">
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb bg-white pl-0">
             <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/"}>Works</Link></li>
-            <li className="breadcrumb-item active" aria-current="page">{category.name}</li>
+            <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/"}>{category.name}</Link></li>
+            <li className="breadcrumb-item active" aria-current="page">{work.title}</li>
           </ol>
         </nav>
-        <h2>{category.name}</h2>
-        <p>{category.description}</p>
+        <h2>{work.title}</h2>
+        <p>{work.description}</p>
         
-          <div className="row">
-            {works}          
-          </div>
       </div>
-    )
+      
+      )
   }
 }
-export default Worklist;
+
+export default WorkDetail;

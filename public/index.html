@@ -45,7 +45,10 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script>
+      $('[data-toggle="tooltip"]').tooltip()
+    </script>
     <script>
       (function(d) {
         var config = {
@@ -56,6 +59,7 @@
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
+    
       <script type="text/javascript">
         // Single Page Apps for GitHub Pages
         // https://github.com/rafrex/spa-github-pages
@@ -85,15 +89,15 @@
           }
         }(window.location))
       </script>
-          <script>
+      <script>
             var w = 0;
             $(window).resize(function(){
                 w = $(window).width();
             });
       
-            $('.navbar-nav>li>a , .dropdown-menu>a').on('click', function(){
+            $('.navbar-nav>li>a, .dropdown-menu>a').on('click', function(){
                 console.log(this.id);
-                console.log(w)
+                console.log(w);
                 if(this.id != 'navbarDropdown' && w < 992){
                   $('.navbar-collapse').collapse('hide');
                 }
