@@ -1,23 +1,35 @@
 {
   "files": {
-    "main.css": "/portfolioreact2020/static/css/main.56ed3697.chunk.css",
-    "main.js": "/portfolioreact2020/static/js/main.92539ee2.chunk.js",
-    "main.js.map": "/portfolioreact2020/static/js/main.92539ee2.chunk.js.map",
+    "main.css": "/portfolioreact2020/static/css/main.8ea16998.chunk.css",
+    "main.js": "/portfolioreact2020/static/js/main.53b40d95.chunk.js",
+    "main.js.map": "/portfolioreact2020/static/js/main.53b40d95.chunk.js.map",
     "runtime-main.js": "/portfolioreact2020/static/js/runtime-main.8d6ff0cb.js",
     "runtime-main.js.map": "/portfolioreact2020/static/js/runtime-main.8d6ff0cb.js.map",
-    "static/js/2.d0e822c6.chunk.js": "/portfolioreact2020/static/js/2.d0e822c6.chunk.js",
-    "static/js/2.d0e822c6.chunk.js.map": "/portfolioreact2020/static/js/2.d0e822c6.chunk.js.map",
+    "static/js/2.cc83cbc9.chunk.js": "/portfolioreact2020/static/js/2.cc83cbc9.chunk.js",
+    "static/js/2.cc83cbc9.chunk.js.map": "/portfolioreact2020/static/js/2.cc83cbc9.chunk.js.map",
     "index.html": "/portfolioreact2020/index.html",
-    "precache-manifest.f413eda35873f7ce1c0113db140cfa48.js": "/portfolioreact2020/precache-manifest.f413eda35873f7ce1c0113db140cfa48.js",
+    "precache-manifest.81e593e6039ddb639d17dc3a24bcd7fb.js": "/portfolioreact2020/precache-manifest.81e593e6039ddb639d17dc3a24bcd7fb.js",
     "service-worker.js": "/portfolioreact2020/service-worker.js",
-    "static/css/main.56ed3697.chunk.css.map": "/portfolioreact2020/static/css/main.56ed3697.chunk.css.map",
-    "static/js/2.d0e822c6.chunk.js.LICENSE.txt": "/portfolioreact2020/static/js/2.d0e822c6.chunk.js.LICENSE.txt",
-    "static/media/clock05.png": "/portfolioreact2020/static/media/clock05.f669a67f.png"
+    "static/css/main.8ea16998.chunk.css.map": "/portfolioreact2020/static/css/main.8ea16998.chunk.css.map",
+    "static/js/2.cc83cbc9.chunk.js.LICENSE.txt": "/portfolioreact2020/static/js/2.cc83cbc9.chunk.js.LICENSE.txt",
+    "static/media/1.png": "/portfolioreact2020/static/media/1.e7988f62.png",
+    "static/media/2.png": "/portfolioreact2020/static/media/2.f669a67f.png",
+    "static/media/3.png": "/portfolioreact2020/static/media/3.9b959a42.png",
+    "static/media/4.png": "/portfolioreact2020/static/media/4.be94d7a8.png",
+    "static/media/Barrier1.png": "/portfolioreact2020/static/media/Barrier1.77145a58.png",
+    "static/media/clock01.png": "/portfolioreact2020/static/media/clock01.062bd691.png",
+    "static/media/clock03.png": "/portfolioreact2020/static/media/clock03.27aa8cc0.png",
+    "static/media/clock04.png": "/portfolioreact2020/static/media/clock04.be94d7a8.png",
+    "static/media/designpresentation.png": "/portfolioreact2020/static/media/designpresentation.337336ce.png",
+    "static/media/name.png": "/portfolioreact2020/static/media/name.53c4e24b.png",
+    "static/media/slide01.png": "/portfolioreact2020/static/media/slide01.54d3f78d.png",
+    "static/media/slide02.png": "/portfolioreact2020/static/media/slide02.6ff892b9.png",
+    "static/media/slide03.png": "/portfolioreact2020/static/media/slide03.69bcebd2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8d6ff0cb.js",
-    "static/js/2.d0e822c6.chunk.js",
-    "static/css/main.56ed3697.chunk.css",
-    "static/js/main.92539ee2.chunk.js"
+    "static/js/2.cc83cbc9.chunk.js",
+    "static/css/main.8ea16998.chunk.css",
+    "static/js/main.53b40d95.chunk.js"
   ]
 }
