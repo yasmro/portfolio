@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolioreact2020/static/css/main.8ea16998.chunk.css",
-    "main.js": "/portfolioreact2020/static/js/main.53b40d95.chunk.js",
-    "main.js.map": "/portfolioreact2020/static/js/main.53b40d95.chunk.js.map",
+    "main.css": "/portfolioreact2020/static/css/main.5ddd65fb.chunk.css",
+    "main.js": "/portfolioreact2020/static/js/main.f3e48820.chunk.js",
+    "main.js.map": "/portfolioreact2020/static/js/main.f3e48820.chunk.js.map",
     "runtime-main.js": "/portfolioreact2020/static/js/runtime-main.8d6ff0cb.js",
     "runtime-main.js.map": "/portfolioreact2020/static/js/runtime-main.8d6ff0cb.js.map",
-    "static/js/2.cc83cbc9.chunk.js": "/portfolioreact2020/static/js/2.cc83cbc9.chunk.js",
-    "static/js/2.cc83cbc9.chunk.js.map": "/portfolioreact2020/static/js/2.cc83cbc9.chunk.js.map",
+    "static/js/2.612334dc.chunk.js": "/portfolioreact2020/static/js/2.612334dc.chunk.js",
+    "static/js/2.612334dc.chunk.js.map": "/portfolioreact2020/static/js/2.612334dc.chunk.js.map",
     "index.html": "/portfolioreact2020/index.html",
-    "precache-manifest.81e593e6039ddb639d17dc3a24bcd7fb.js": "/portfolioreact2020/precache-manifest.81e593e6039ddb639d17dc3a24bcd7fb.js",
+    "precache-manifest.fba6be147f737194ec434d32fcf5ab1d.js": "/portfolioreact2020/precache-manifest.fba6be147f737194ec434d32fcf5ab1d.js",
     "service-worker.js": "/portfolioreact2020/service-worker.js",
-    "static/css/main.8ea16998.chunk.css.map": "/portfolioreact2020/static/css/main.8ea16998.chunk.css.map",
-    "static/js/2.cc83cbc9.chunk.js.LICENSE.txt": "/portfolioreact2020/static/js/2.cc83cbc9.chunk.js.LICENSE.txt",
+    "static/css/main.5ddd65fb.chunk.css.map": "/portfolioreact2020/static/css/main.5ddd65fb.chunk.css.map",
+    "static/js/2.612334dc.chunk.js.LICENSE.txt": "/portfolioreact2020/static/js/2.612334dc.chunk.js.LICENSE.txt",
     "static/media/1.png": "/portfolioreact2020/static/media/1.e7988f62.png",
     "static/media/2.png": "/portfolioreact2020/static/media/2.f669a67f.png",
     "static/media/3.png": "/portfolioreact2020/static/media/3.9b959a42.png",
@@ -28,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8d6ff0cb.js",
-    "static/js/2.cc83cbc9.chunk.js",
-    "static/css/main.8ea16998.chunk.css",
-    "static/js/main.53b40d95.chunk.js"
+    "static/js/2.612334dc.chunk.js",
+    "static/css/main.5ddd65fb.chunk.css",
+    "static/js/main.f3e48820.chunk.js"
   ]
 }
