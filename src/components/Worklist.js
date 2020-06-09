@@ -141,6 +141,17 @@ class Worklist extends React.Component {
       </Link>
     )
 
+    const lis = this.state.works[category_id].portfolios.map( work =>
+      <li data-target="#carouselExampleIndicators" data-slide-to= {work.id - 1} class={ ((work.id) == 1) ? ("active") : ("")}></li>
+    )
+
+    const slides = this.state.works[category_id].portfolios.map( work =>
+      
+      <div class={ ((work.id) == 1) ? ("carousel-item active") : ("carousel-item")}>
+        <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" class="d-block w-100"/>
+      </div>
+    )
+
     return(
       <div className="container mt-5">
         <nav aria-label="breadcrumb">
@@ -152,9 +163,26 @@ class Worklist extends React.Component {
         <h2>{category.name}</h2>
         <p>{category.description}</p>
         
-          <div className="row">
-            {works}          
+        <div className="row">
+          {works}          
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade hover" data-ride="carousel">
+          <ol class="carousel-indicators">
+            {lis}
+          </ol>
+          <div class="carousel-inner">
+            {slides}
           </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
     )
   }

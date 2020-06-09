@@ -32,7 +32,7 @@ class WorkDetail extends React.Component {
             {
               id:3,
               title:"Shodo3",
-              description: "hoge1",
+              description: "hoge1 <span style='color: red;'>happy</span>",
               images:[
                 "test2"
               ]
@@ -115,6 +115,8 @@ class WorkDetail extends React.Component {
       </div>
       
       )
+
+      
   }
 }
 

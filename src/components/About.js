@@ -20,23 +20,11 @@ class About extends React.Component {
               description: "Available for jQuery and native. Also, I'm learning ReactJS now."
             },
             {
-              name: "Java",
+              name: "Java, R, Shell Script",
               description: "Analyze student's activity data in programming lectures"
             },
             {
-              name: "R",
-              description: "Analyze student's activity data in programming lectures"
-            },
-            {
-              name: "Shell Script",
-              description: "Analyze student's activity data in programming lectures"
-            },
-            {
-              name: "C#",
-              description: ""
-            },
-            {
-              name: "MySQL",
+              name: "C#, MySQL",
               description: ""
             }
           ]
