@@ -27,4 +27,5 @@ h1{
 
 p, dd, li{
   color: #808080;
+  text-align: justify;
 }

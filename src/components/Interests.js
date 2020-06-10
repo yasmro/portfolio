@@ -6,7 +6,7 @@ class Interests extends React.Component {
   render(){
     return(
       <div className="container mt-5">
-        <h1 className="mb-5">Interests</h1>
+        <h1 className="mb-5 text-center text-md-left">Interests</h1>
         
         <div className="mb-5">
           <h3>Spread the charm of "Shodo"</h3>

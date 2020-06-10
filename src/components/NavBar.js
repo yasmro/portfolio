@@ -5,7 +5,7 @@ class NavBar extends Component {
   render(){
     return(
       <div className="">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top pl-lg-5">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top pl-lg-5" id="navbar">
           <Link className="navbar-brand" to={process.env.PUBLIC_URL + "/"}>Yu Ohno</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

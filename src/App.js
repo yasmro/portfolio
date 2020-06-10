@@ -16,7 +16,7 @@ function App() {
   var url = window.location.href;
   var flag = true;
 
-  const NoMatch = () => (<h1>Not found!! </h1>);
+  const NoMatch = () => (<div className="container"><h1>Not found!! </h1></div>);
 
   return(
     ReactDOM.render(

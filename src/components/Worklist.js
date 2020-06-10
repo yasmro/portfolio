@@ -72,20 +72,40 @@ class Worklist extends React.Component {
           imageUrl: "mis",
           portfolios:[
             { id:1,
-             title:"Mis1",
-             description: "sss",
-             images:[
-               "test1"
-             ]
-           },
-           {
+              title:"Smart Attendance System",
+              technologies:"System design and Develop with C# (Xamarin)",
+              description: "Smart Attendance System is a mobile application that provides checking student's attendances for the lecture through scanning QR code. I propose \"Dynamic QR code\" that the system produces dynamically based on the server time in order to prevent fraud of QR code by some students. Also, I developed Android app which fetchs and posts student's attendance from Web service and DB which have developed by Singaporean labmates through RESTful API.",
+              images:[
+                "test1"
+              ]
+            },
+            {
              id:2,
-             title:"Mis2",
-             description: "hoge1",
+             title:"Hardware Products: Barrier Detector",
+             technologies: "Product manager and Develop with Arduino",
+             description: "Barrier Detector provides detecting obstructs on road to prevent injuring for blindness pedestrians. I designed the detection range of obstructs with mathematics such as trigonometric function and three dimensional polar-coordinates ($r, \theta, \varphi$–coordinates) based on pedestrian’s walk-characteristics (e.g. walk speed, visible angular range) with caluculation.",
              images:[
                "test2"
              ]
-           }
+           },
+            {
+              id:3,
+              title:"Slide Design: How to Design Presentation",
+              technologies: "PowerPoint (Japanese)",
+              description: "I received some requests about improving presentation slides. Through using experiences I created ebook about how to design and make better presentation material for novices. before.",
+              images:[
+                "test2"
+              ]
+            },
+            {
+              id:4,
+              title:"Enmel",
+              technologies: "Design, Develop and Maintain Web page with HTML, CSS and JavaScript",
+              description: "Enmel is a Web system which manages and shares the recipes(e.g. ingredients, procedures preparation/finish, allergy etc.) for restaurant or pastry chef. In addition, applying recipe data expected business efficiency such as cost accounting, material management, customer management, their schedule management and so on.",
+              images:[
+                "test2"
+              ]
+            }
 
           ]
         }
@@ -149,6 +169,9 @@ class Worklist extends React.Component {
       
       <div class={ ((work.id) == 1) ? ("carousel-item active") : ("carousel-item")}>
         <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" class="d-block w-100"/>
+        <div class="carousel-caption">
+          <h6>{work.title}</h6>
+        </div>
       </div>
     )
 
@@ -163,11 +186,11 @@ class Worklist extends React.Component {
         <h2>{category.name}</h2>
         <p>{category.description}</p>
         
-        <div className="row">
+        <div className="row d-none d-md-flex">
           {works}          
         </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade hover" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade hover d-md-none" data-ride="carousel">
           <ol class="carousel-indicators">
             {lis}
           </ol>

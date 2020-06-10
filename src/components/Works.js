@@ -31,12 +31,12 @@ class Works extends Component {
 
 
   render(){
-    const categories = this.state.works.map( work =>
-      <Link className="nav-link col-lg-4 col-md-6 col-12" to={process.env.PUBLIC_URL + "/works/" + work.id}>
-        <div className="cover-img pt-5 pb-5" Style="background-image:url('../images/shodo/1.png');">
+    const categories = this.state.works.map( category =>
+      <Link className="nav-link col-lg-4 col-md-6 col-12 mb-2 bg-light" to={process.env.PUBLIC_URL + "/works/" + category.id}>
+        <div className="cover-img pt-5 pb-5 pr-md-2" Style="background-image:url('../images/shodo/1.png');">
           <div className="about-text">
-            <h3>{work.name}</h3>
-            <p>{work.description}</p>
+            <h3>{category.name}</h3>
+            <p>{category.description}</p>
           </div>
         </div>
       </Link>
@@ -44,7 +44,7 @@ class Works extends Component {
 
     return(
       <div className="container mt-5">
-        <h1 className="mb-5">Works</h1>
+        <h1 className="mb-5 text-center text-md-left">Works</h1>
         <div className="">
           <div className="row">
             {categories}

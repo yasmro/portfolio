@@ -83,7 +83,7 @@ class About extends React.Component {
 
   render(){
     const skills = this.state.skills.map( category =>
-      <div class="col-lg-4 col-12 mb-3">
+      <div className="col-lg-4 col-12 mb-3">
         <h4>{category.category}</h4>
         <dl>
           {this.renderskills(category.skills)}
@@ -93,7 +93,7 @@ class About extends React.Component {
 
     return(
       <div className="container mt-5">
-        <h1 className="mb-5">About</h1>
+        <h1 className="mb-5 text-center text-md-left">About</h1>
         <div className="mt-5">
           <h2>Intro.</h2>
           <ul>
@@ -111,7 +111,11 @@ class About extends React.Component {
                 <span className="resume-date">April 2019 – Now</span>
             </div> 
               <h4>Zoho Japan Corporation</h4>
-              <p>Post support for 6 products with Indian (Global-HQ) team</p>
+              <p>Post support for 7 products with Indian (Global-HQ) team</p>
+              <ul>
+                <li>Zoho CRM, Zoho Campaigns, Zoho SalesIQ, Zoho Projects and Zoho Deluge (mainly)</li>
+                <li>Zoho Desk and Zoho Analytics (sub)</li>
+              </ul>
             </div>
 
             <div className = "contents-works enmel">
@@ -128,10 +132,10 @@ class About extends React.Component {
               </div>
               <h4>National Institute of Technology, Nara College</h4>
               <p>Advanced Information Engineering course / Bachelor Degree (Engineering)</p>
-              <button type="button" class="btn btn-light border-dark rounded-0 btn-sm" data-toggle="collapse" data-target="#projectDetail" aria-expanded="false" aria-controls="collapseExample">
+              <button type="button" className="btn btn-light border-dark rounded-0 btn-sm" data-toggle="collapse" data-target="#projectDetail" aria-expanded="false" aria-controls="collapseExample">
                   Detail
               </button>
-            <div class="collapse mt-2" id="projectDetail">
+            <div className="collapse mt-2" id="projectDetail">
 
               <h5>Projects</h5>
               <ol>
@@ -150,9 +154,9 @@ class About extends React.Component {
               </div>
             </div>
 
-            <div class = "contents-works">
-              <div class="resume-date">
-                  <span class="resume-date">April 2012 – March 2017</span>
+            <div className = "contents-works">
+              <div className="resume-date">
+                  <span className="resume-date">April 2012 – March 2017</span>
               </div>
               <h4>National Institute of Technology, Nara College</h4>
               <p>Dept. Information Engineering / Associate Degree</p>
@@ -161,7 +165,7 @@ class About extends React.Component {
 
         <div className="mt-5">
           <h2>Skills</h2>
-          <div class="row">
+          <div className="row">
             {skills}
           </div>
         </div>
