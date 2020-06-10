@@ -29,3 +29,9 @@ p, dd, li{
   color: #808080;
   text-align: justify;
 }
+
+@media only screen and (max-width: 576px) {
+  p, dd, li, span{
+    font-size: 0.9rem;
+  }
+}
