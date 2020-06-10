@@ -33,5 +33,6 @@ p, dd, li{
 @media only screen and (max-width: 576px) {
   p, dd, li, span{
     font-size: 0.9rem;
+    text-align: start;
   }
 }
