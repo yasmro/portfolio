@@ -3,9 +3,12 @@ import {BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 class NavBar extends Component {
   render(){
+    // const menu = this.props.match.params.menu;
+    // var color = (menu == "") ? "bg-dark" : "bg-light";
+    var color = "bg-light";
     return(
       <div className="">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top pl-lg-5" id="navbar">
+        <nav className={ "navbar navbar-expand-lg navbar-light fixed-top pl-lg-5 " + color} id="navbar">
           <Link className="navbar-brand" to={process.env.PUBLIC_URL + "/"}>Yu Ohno</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

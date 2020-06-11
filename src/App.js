@@ -21,7 +21,7 @@ function App() {
   return(
     ReactDOM.render(
       <BrowserRouter>
-        <NavBar />
+        <NavBar path={ process.env.PUBLIC_URL + '/:menu'}/>
         <div className="" Style="padding-top: 56px;">
           <Switch>
             <Route exact path={ process.env.PUBLIC_URL + '/'} component={Home} Style="padding-top: 0px;"/>

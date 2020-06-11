@@ -37,6 +37,52 @@ class Worklist extends React.Component {
               images:[
                 "test2"
               ]
+            },
+            { id:4,
+              title:"Shodo4",
+              description: "hoge1",
+              images:[
+                "test1"
+              ]
+            },
+            {
+              id:5,
+              title:"Shodo5",
+              description: "hoge1",
+              images:[
+                "test2"
+              ]
+            },
+            {
+              id:6,
+              title:"Shodo6",
+              description: "hoge1",
+              images:[
+                "test2"
+              ]
+            },
+            { id:7,
+              title:"Shodo7",
+              description: "hoge1",
+              images:[
+                "test1"
+              ]
+            },
+            {
+              id:8,
+              title:"Shodo8",
+              description: "hoge1",
+              images:[
+                "test2"
+              ]
+            },
+            {
+              id:9,
+              title:"Shodo9",
+              description: "hoge1",
+              images:[
+                "test2"
+              ]
             }
 
           ]
@@ -99,6 +145,15 @@ class Worklist extends React.Component {
             },
             {
               id:4,
+              title:"Projects: Detection of Random Correnctions from Source Code Snapshots",
+              technologies: "Design, Develop and Maintain Web page with HTML, CSS and JavaScript",
+              description: "Enmel is a Web system which manages and shares the recipes(e.g. ingredients, procedures preparation/finish, allergy etc.) for restaurant or pastry chef. In addition, applying recipe data expected business efficiency such as cost accounting, material management, customer management, their schedule management and so on.",
+              images:[
+                "test2"
+              ]
+            },
+            {
+              id:5,
               title:"Enmel",
               technologies: "Design, Develop and Maintain Web page with HTML, CSS and JavaScript",
               description: "Enmel is a Web system which manages and shares the recipes(e.g. ingredients, procedures preparation/finish, allergy etc.) for restaurant or pastry chef. In addition, applying recipe data expected business efficiency such as cost accounting, material management, customer management, their schedule management and so on.",
@@ -150,16 +205,55 @@ class Worklist extends React.Component {
     const category_id = this.props.match.params.category;
     const category = this.state.works[category_id];
 
-    const works = this.state.works[category_id].portfolios.map( work =>
-      <Link className="nav-link col-lg-4 col-md-6 col-12" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + work.id}>
-        <div className="cover-img pb-5 thumbnail">
-          <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" className = "bwWrapper pb-1 w-100"/>
-          <div className="about-text">
-            <h4>{work.title}</h4>
+    var works;
+    if(category_id == "miscelleneous"){
+      works = this.state.works[category_id].portfolios.map( work =>
+        <Link className="nav-link col-lg-4 col-md-6 col-12" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + work.id}>
+          <div className="cover-img pb-5 thumbnail">
+            <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" className = "bwWrapper pb-1 w-100"/>
+            <div className="about-text">
+              <h4>{work.title}</h4>
+            </div>
+          </div>
+        </Link>
+
+      )
+    }else{
+      works = this.state.works[category_id].portfolios.map( work =>
+        <div className="nav-link col-lg-4 col-md-6 col-12" >
+          <div className="cover-img pb-5 thumbnail">
+            <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" data-toggle="modal" data-target= { "#" + category_id + work.id } className = "bwWrapper pb-1 w-100"/>
+            <div className="about-text">
+              <h4>{work.title}</h4>
+            </div>
           </div>
         </div>
-      </Link>
-    )
+      )
+    }
+
+    var modal;
+    if(category_id == "aaa"){
+
+    }else{
+      modal = this.state.works[category_id].portfolios.map( work =>
+        <div className="modal fade" id={category_id + work.id } tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div className="modal-dialog modal-dialog-centered" role="document">
+            <div className="modal-content">
+
+              <div className="modal-body mb-0 p-0">
+                <div className="embed-responsive-16by9 z-depth-1-half">
+                  <img src={require('../images/' + category_id + '/' + work.id +'.png')} class="aligncenter" alt="clock01" className="w-100"/>
+                </div>  
+              </div>
+              <button type="button" className="btn btn-outline-light text-dark" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+
+      )
+    }
+
+    
 
     const lis = this.state.works[category_id].portfolios.map( work =>
       <li data-target="#carouselExampleIndicators" data-slide-to= {work.id - 1} class={ ((work.id) == 1) ? ("active") : ("")}></li>
@@ -189,6 +283,7 @@ class Worklist extends React.Component {
         <div className="row d-none d-md-flex">
           {works}          
         </div>
+        {modal}
 
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade hover d-md-none" data-ride="carousel">
           <ol class="carousel-indicators">
