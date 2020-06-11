@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4badf0a2482c805b6311c14cae6a875e",
+    "revision": "360fd248b02111936db42b0f77a3dabe",
     "url": "/portfolioreact2020/index.html"
   },
   {
-    "revision": "dd665301864dd25d75ff",
-    "url": "/portfolioreact2020/static/css/main.37585cf7.chunk.css"
+    "revision": "88782fd95f816053adc2",
+    "url": "/portfolioreact2020/static/css/main.3e966fbe.chunk.css"
   },
   {
-    "revision": "74e4bfa0f40a963f0705",
-    "url": "/portfolioreact2020/static/js/2.612334dc.chunk.js"
+    "revision": "ab424cfe1f997d7b2b66",
+    "url": "/portfolioreact2020/static/js/2.1d6aab01.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/portfolioreact2020/static/js/2.612334dc.chunk.js.LICENSE.txt"
+    "url": "/portfolioreact2020/static/js/2.1d6aab01.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dd665301864dd25d75ff",
-    "url": "/portfolioreact2020/static/js/main.f3484655.chunk.js"
+    "revision": "88782fd95f816053adc2",
+    "url": "/portfolioreact2020/static/js/main.da7503c1.chunk.js"
   },
   {
     "revision": "1ce690e3909c724fa28c",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e7988f626b7a8b7c0e102bd988717306",
     "url": "/portfolioreact2020/static/media/1.e7988f62.png"
+  },
+  {
+    "revision": "b237d9a6d7de07cd94ad86fbee09605f",
+    "url": "/portfolioreact2020/static/media/10.b237d9a6.png"
   },
   {
     "revision": "502a5747a19c8cd103aa0205a5dff1da",
@@ -48,8 +52,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolioreact2020/static/media/3.9b959a42.png"
   },
   {
+    "revision": "2b2c2f235a78f365e38b6fd07dd7fff8",
+    "url": "/portfolioreact2020/static/media/4.2b2c2f23.png"
+  },
+  {
     "revision": "be94d7a84b1a197e8b2456fba51a7e51",
     "url": "/portfolioreact2020/static/media/4.be94d7a8.png"
+  },
+  {
+    "revision": "39f33b56b8781bbe33612775f4838ea7",
+    "url": "/portfolioreact2020/static/media/5.39f33b56.png"
+  },
+  {
+    "revision": "b37b650b0f4ce9d1b8823d9304c74312",
+    "url": "/portfolioreact2020/static/media/5.b37b650b.png"
+  },
+  {
+    "revision": "c1e6da73231cbf124433900a0009cd8c",
+    "url": "/portfolioreact2020/static/media/6.c1e6da73.png"
+  },
+  {
+    "revision": "91d0f4509de0497d56fefe12828a95e7",
+    "url": "/portfolioreact2020/static/media/7.91d0f450.png"
+  },
+  {
+    "revision": "a75f7cd32c09eaaf27b4773efacf6060",
+    "url": "/portfolioreact2020/static/media/8.a75f7cd3.png"
+  },
+  {
+    "revision": "edd0a5dd6ffaa7e1d011f951d0381d37",
+    "url": "/portfolioreact2020/static/media/9.edd0a5dd.png"
   },
   {
     "revision": "77145a58d33d6f0d18dfd08533e93ce2",
