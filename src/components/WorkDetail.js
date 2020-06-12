@@ -100,7 +100,7 @@ class WorkDetail extends React.Component {
             id:4,
             title:"Projects: Detection of Random Correnctions from Source Code Snapshots",
             technologies: "Design, Develop and Maintain Web page with HTML, CSS and JavaScript",
-            description: "Enmel is a Web system which manages and shares the recipes(e.g. ingredients, procedures preparation/finish, allergy etc.) for restaurant or pastry chef. In addition, applying recipe data expected business efficiency such as cost accounting, material management, customer management, their schedule management and so on.",
+            description: "	Classifying student's situation helps improve educational effect in programming course with snapshots. Snapshots can grasp student who falls \"pitfall\" during a course. The purpose of this study is to classify students who make random correction in the programming course with Online Judge System. Random Correction is an action that source code correction without understanding the exercise contents. Then we propose metrics to classify students who make random corrections from snapshots of source code submitted by students and verify their usefulness. The result of the experiment shows that students who cannot reach perfect score had high value of both metrics; 1) a degree of imbalance corrections between source code lines, 2) the number of submitted revisions.",
             images:[
               "test2"
             ]

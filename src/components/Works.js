@@ -32,7 +32,7 @@ class Works extends Component {
 
   render(){
     const categories = this.state.works.map( category =>
-      <Link className="nav-link col-lg-4 col-md-6 col-12 mb-2 bg-light" to={process.env.PUBLIC_URL + "/works/" + category.id}>
+      <Link className="nav-link col-lg-4 col-md-6 col-12 mb-2 bg-light text-dark" to={process.env.PUBLIC_URL + "/works/" + category.id}>
         <div className="cover-img pt-5 pb-5 pr-md-2" Style="background-image:url('../images/shodo/1.png');">
           <div className="about-text">
             <h3>{category.name}</h3>

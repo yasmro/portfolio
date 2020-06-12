@@ -13,16 +13,21 @@
   }
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 *{
-  font-family: neue-haas-grotesk-display, dnp-shuei-gothic-kin-std, 'Ubuntu', bebas-neue-pro-semiexpanded, a-otf-ud-shin-go-pr6n,sans-serif;
+  font-family: 'Roboto Condensed',  neue-haas-grotesk-display, dnp-shuei-gothic-kin-std,sans-serif;
   font-weight: 400;
 }
 
 h1{
   font-family: adobe-handwriting-frank;
+}
+
+h2, h3, h4, h5, h6, dt, span.resume-date, .nav-link{
+  font-family: 'Roboto'
+ 
 }
 
 p, dd, li{
@@ -35,4 +40,5 @@ p, dd, li{
     font-size: 0.9rem;
     text-align: start;
   }
+
 }

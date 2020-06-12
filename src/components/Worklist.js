@@ -208,7 +208,7 @@ class Worklist extends React.Component {
     var works;
     if(category_id == "miscelleneous"){
       works = this.state.works[category_id].portfolios.map( work =>
-        <Link className="nav-link col-lg-4 col-md-6 col-12" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + work.id}>
+        <Link className="nav-link col-lg-4 col-md-6 col-12 text-dark" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + work.id}>
           <div className="cover-img pb-5 thumbnail">
             <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" className = "bwWrapper pb-1 w-100"/>
             <div className="about-text">
@@ -220,7 +220,7 @@ class Worklist extends React.Component {
       )
     }else{
       works = this.state.works[category_id].portfolios.map( work =>
-        <div className="nav-link col-lg-4 col-md-6 col-12" >
+        <div className="nav-link col-lg-4 col-md-6 col-12 text-dark" >
           <div className="cover-img pb-5 thumbnail">
             <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" data-toggle="modal" data-target= { "#" + category_id + work.id } className = "bwWrapper pb-1 w-100"/>
             <div className="about-text">
