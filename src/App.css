@@ -15,10 +15,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 
+/* , 'Roboto' 'Roboto Condensed',  */
 *{
-  font-family: 'Roboto Condensed',  neue-haas-grotesk-display, dnp-shuei-gothic-kin-std,sans-serif;
+  font-family:  dnp-shuei-gothic-kin-std, neue-haas-grotesk-display, sans-serif;
   font-weight: 400;
+  
 }
 
 h1{
@@ -26,8 +29,7 @@ h1{
 }
 
 h2, h3, h4, h5, h6, dt, span.resume-date, .nav-link{
-  font-family: 'Roboto'
- 
+  font-family:  fot-rodin-pron, neue-haas-grotesk-display;
 }
 
 p, dd, li{

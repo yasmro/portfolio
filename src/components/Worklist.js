@@ -16,30 +16,30 @@ class Worklist extends React.Component {
           imageUrl: "shodo",
           portfolios:[
              { id:1,
-              title:"Shodo1",
-              description: "hoge1",
+              title:"Minazuki",
+              description: "",
               images:[
                 "test1"
               ]
             },
             {
               id:2,
-              title:"Shodo2",
-              description: "hoge1",
+              title:"Momiji Moyu",
+              description: "",
               images:[
                 "test2"
               ]
             },
             {
               id:3,
-              title:"Shodo3",
+              title:"Silent",
               description: "hoge1",
               images:[
                 "test2"
               ]
             },
             { id:4,
-              title:"Shodo4",
+              title:"Business Card",
               description: "hoge1",
               images:[
                 "test1"
@@ -47,7 +47,7 @@ class Worklist extends React.Component {
             },
             {
               id:5,
-              title:"Shodo5",
+              title:"Yu-Oh-Mai-Shin",
               description: "hoge1",
               images:[
                 "test2"
@@ -55,14 +55,14 @@ class Worklist extends React.Component {
             },
             {
               id:6,
-              title:"Shodo6",
+              title:"Heisei and Reiwa",
               description: "hoge1",
               images:[
                 "test2"
               ]
             },
             { id:7,
-              title:"Shodo7",
+              title:"The Dusk",
               description: "hoge1",
               images:[
                 "test1"
@@ -70,7 +70,7 @@ class Worklist extends React.Component {
             },
             {
               id:8,
-              title:"Shodo8",
+              title:"Geishun 2019",
               description: "hoge1",
               images:[
                 "test2"
@@ -78,7 +78,7 @@ class Worklist extends React.Component {
             },
             {
               id:9,
-              title:"Shodo9",
+              title:"Geishun 2020",
               description: "hoge1",
               images:[
                 "test2"
@@ -94,7 +94,7 @@ class Worklist extends React.Component {
           imageUrl: "watchface",
           portfolios:[
             { id:1,
-             title:"Watchface1",
+             title:"",
              description: "hoge1",
              images:[
                "test1"
@@ -102,12 +102,36 @@ class Worklist extends React.Component {
            },
            {
              id:2,
-             title:"Watchface2",
+             title:"",
              description: "hoge1",
              images:[
                "test2"
              ]
-           }
+           },
+           {
+            id:3,
+            title:"",
+            description: "hoge1",
+            images:[
+              "test2"
+            ]
+          },
+          {
+            id:4,
+            title:"",
+            description: "hoge1",
+            images:[
+              "test2"
+            ]
+          },
+          {
+            id:5,
+            title:"",
+            description: "hoge1",
+            images:[
+              "test2"
+            ]
+          }
 
           ]
         },
