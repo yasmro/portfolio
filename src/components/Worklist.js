@@ -256,9 +256,7 @@ class Worklist extends React.Component {
     }
 
     var modal;
-    if(category_id == "aaa"){
-
-    }else{
+    if(category_id != "miscelleneous"){
       modal = this.state.works[category_id].portfolios.map( work =>
         <div className="modal fade" id={category_id + work.id } tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered" role="document">
@@ -283,15 +281,31 @@ class Worklist extends React.Component {
       <li data-target="#carouselExampleIndicators" data-slide-to= {work.id - 1} class={ ((work.id) == 1) ? ("active") : ("")}></li>
     )
 
-    const slides = this.state.works[category_id].portfolios.map( work =>
+    var slides;
+    if(category_id == "miscelleneous"){
+      slides = this.state.works[category_id].portfolios.map( work =>
+          <div class={ ((work.id) == 1) ? ("carousel-item active") : ("carousel-item")}>
+            <Link className="" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + work.id}>
+              <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" class="d-block w-100"/>
+              <div className="mt-3 text-dark text-center">
+                <h6>{work.title}</h6>
+              </div>
+            </Link>
+          </div>
+
+      )
       
-      <div class={ ((work.id) == 1) ? ("carousel-item active") : ("carousel-item")}>
-        <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" class="d-block w-100"/>
-        <div class="carousel-caption">
-          <h6>{work.title}</h6>
+    }else{
+      slides = this.state.works[category_id].portfolios.map( work =>
+        <div class={ ((work.id) == 1) ? ("carousel-item active") : ("carousel-item")}>
+          <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" class="d-block w-100"/>
+          <div className="mt-3 text-dark text-center">
+            <h6>{work.title}</h6>
+          </div>
         </div>
-      </div>
-    )
+        
+      )
+    }
 
     return(
       <div className="container mt-5">
@@ -309,20 +323,20 @@ class Worklist extends React.Component {
         </div>
         {modal}
 
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade hover d-md-none" data-ride="carousel">
-          <ol class="carousel-indicators">
-            {lis}
-          </ol>
-          <div class="carousel-inner">
+        <div id="carouselExampleIndicators" className="carousel slide  hover d-md-none" data-ride="carousel">
+          <div className="carousel-inner">
             {slides}
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+          <ol className="carousel-indicators">
+            {lis}
+          </ol>
+          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+          <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
           </a>
         </div>
       </div>

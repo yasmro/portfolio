@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 class NavBar extends Component {
+
   render(){
+
     // const menu = this.props.match.params.menu;
     // var color = (menu == "") ? "bg-dark" : "bg-light";
     var color = "bg-light";
