@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c0ce14489b8d0c510294fe456ccf4d3b",
+    "revision": "6fa02c1a9f58b9b660008d7a82a2b7af",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "b8a2eebe7ee367df2ea4",
-    "url": "/portfolio/static/css/main.aa2ab430.chunk.css"
+    "revision": "ff8f2d00b2f7549bcd05",
+    "url": "/portfolio/static/css/main.99c3f6f7.chunk.css"
   },
   {
-    "revision": "bde29bb8458e4a6dd704",
-    "url": "/portfolio/static/js/2.a8dbb2fe.chunk.js"
+    "revision": "ea28dbb2c706c4d01fdd",
+    "url": "/portfolio/static/js/2.dc51b28c.chunk.js"
   },
   {
     "revision": "c87550333da8df8ab4c80bd1d6e9defb",
-    "url": "/portfolio/static/js/2.a8dbb2fe.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.dc51b28c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b8a2eebe7ee367df2ea4",
-    "url": "/portfolio/static/js/main.14021181.chunk.js"
+    "revision": "ff8f2d00b2f7549bcd05",
+    "url": "/portfolio/static/js/main.01990d60.chunk.js"
   },
   {
     "revision": "d01ff818965c69767949",
     "url": "/portfolio/static/js/runtime-main.ada8174c.js"
+  },
+  {
+    "revision": "7a543767f26b3e391cb3271159899295",
+    "url": "/portfolio/static/media/0.7a543767.jpg"
   },
   {
     "revision": "062bd691f679e6d8ff8a95a91846ca28",
@@ -96,6 +100,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/6.c1e6da73.png"
   },
   {
+    "revision": "fb2396cf71c8edd17a70405e9420c3ca",
+    "url": "/portfolio/static/media/6.fb2396cf.png"
+  },
+  {
     "revision": "91d0f4509de0497d56fefe12828a95e7",
     "url": "/portfolio/static/media/7.91d0f450.png"
   },
@@ -110,6 +118,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "77145a58d33d6f0d18dfd08533e93ce2",
     "url": "/portfolio/static/media/Barrier1.77145a58.png"
+  },
+  {
+    "revision": "c8932a7896e6d714b49ee19ffe5515f3",
+    "url": "/portfolio/static/media/HowToDesignPresentationV1_0.c8932a78.pdf"
+  },
+  {
+    "revision": "c086b68285922b831cacdf83f3c1d1e1",
+    "url": "/portfolio/static/media/SAS.c086b682.jpeg"
+  },
+  {
+    "revision": "fb2396cf71c8edd17a70405e9420c3ca",
+    "url": "/portfolio/static/media/UnderPreparation.fb2396cf.jpeg"
   },
   {
     "revision": "b237d9a6d7de07cd94ad86fbee09605f",
