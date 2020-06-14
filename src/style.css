@@ -32,6 +32,10 @@ span.resume-date{
 }
 
 /* contacts */
+.contact-box{
+  height: 150px;
+}
+
 .social-icons a {
   display: inline-block;
   height: 3.5rem;
