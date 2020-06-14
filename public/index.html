@@ -49,6 +49,23 @@
     <script>
       $('[data-toggle="tooltip"]').tooltip()
     </script>
+    <script src="jquery.BlackAndWhite.js" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $('.bwWrapper').BlackAndWhite({
+              hoverEffect : true,
+              webworkerPath : false,
+              invertHoverEffect: false, //白黒→カラー（trueにするとカラー→白黒）
+              intensity:1,
+              speed: {
+                  fadeIn: 200, //フェードインのスピード
+                  fadeOut: 800 //フェードアウトのスピード
+              },
+              onImageReady:function(img) {
+              }
+          });
+      });
+    </script>
     <script>
       (function(d) {
         var config = {

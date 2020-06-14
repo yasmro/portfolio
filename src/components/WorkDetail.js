@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
+import { motion } from "framer-motion";
 import '../style.css';
 
 class WorkDetail extends React.Component {
@@ -159,6 +160,23 @@ class WorkDetail extends React.Component {
     )
     
     return(
+      <motion.div
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      initial={{
+        y: 100,
+        opacity: 0
+      }}
+      exit={{
+        y: -100,
+        opacity: 0
+      }}
+      transition={{
+        duration: 0.2
+      }}
+   >
       <div className="container mt-5">
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb bg-white pl-0">
@@ -174,6 +192,7 @@ class WorkDetail extends React.Component {
         </div>
         
       </div>
+      </motion.div>
       
       )
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { motion } from "framer-motion";
 import '../style.css';
 
 class About extends React.Component {
@@ -92,6 +92,23 @@ class About extends React.Component {
     )
 
     return(
+      <motion.div
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      initial={{
+        y: 100,
+        opacity: 0
+      }}
+      exit={{
+        y: -100,
+        opacity: 0
+      }}
+      transition={{
+        duration: 0.2
+      }}
+   >
       <div className="container mt-5">
         <h1 className="mb-5 text-center text-md-left">About</h1>
         <div className="mt-5">
@@ -171,6 +188,7 @@ class About extends React.Component {
         </div>
 
       </div>
+      </motion.div>
       
       )
   }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { motion } from 'framer-motion';
 
 class Contact extends Component {
 
@@ -41,10 +42,10 @@ class Contact extends Component {
   render(){
     const contacts = this.state.contacts.map( contact =>
       <a href={contact.href} className="contact-box nav-link col-md-5 mr-md-2 col-12 mb-3 bg-light text-dark">
-        <div className="cover-img pt-4 pr-md-2" Style="background-image:url('../images/shodo/1.png');">
+        <div className="cover-img pt-2 pr-md-2" Style="background-image:url('../images/shodo/1.png');">
           <div className="mb-2">
-            <i className={contact.icon + " fa-2x mr-3"}></i>
-            <span className="h2">{contact.name}</span>
+            <i className={contact.icon + " fa-2x"}></i>
+            <span className="header h3 position-absolute" Style="left: 56px;">{contact.name}</span>
           </div>
           <p>{contact.url}</p>
         </div>
@@ -52,28 +53,31 @@ class Contact extends Component {
     )
 
     return(
+      <motion.div
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      initial={{
+        y: 100,
+        opacity: 0
+      }}
+      exit={{
+        y: -100,
+        opacity: 0
+      }}
+      transition={{
+        duration: 0.2
+      }}
+   >
       <div className="container mt-5">
         <h1 className="mb-5 text-center text-md-left">Contact</h1>
       
         <div className="row">
           {contacts}
         </div>   
-
-        {/* <div class="social-icons">
-              <a href="mailto:kantillo0683@gmail.com" data-toggle="tooltip" data-placement="bottom" title="kantillo0683@gmail.com">
-                <i class="far fa-envelope"></i>
-              </a>
-              <a href="https://github.com/yasmro" data-toggle="tooltip" data-placement="bottom" title="yasmro">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://www.facebook.com/yu.ohno.16" data-toggle="tooltip" data-placement="bottom" title="yu.ohno.16">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="https://www.instagram.com/yasmro1226" data-toggle="tooltip" data-placement="bottom" title="yasmro1226">
-                <i class="fab fa-instagram"></i>
-              </a>
-        </div> */}
       </div>
+      </motion.div>
     )
   }
 }

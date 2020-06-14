@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
+import { motion } from "framer-motion";
 
 class Works extends Component {
   constructor() {
@@ -43,6 +44,23 @@ class Works extends Component {
     )
 
     return(
+      <motion.div
+        animate={{
+          y: 0,
+          opacity: 1
+        }}
+        initial={{
+          y: 100,
+          opacity: 0
+        }}
+        exit={{
+          y: -100,
+          opacity: 0
+        }}
+        transition={{
+          duration: 0.2
+        }}
+     >
       <div className="container mt-5">
         <h1 className="mb-5 text-center text-md-left">Works</h1>
         <div className="">
@@ -52,6 +70,7 @@ class Works extends Component {
             
         </div>
       </div>
+      </motion.div>
     )
   }
 

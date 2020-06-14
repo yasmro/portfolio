@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
+import { motion } from "framer-motion";
 
 class Worklist extends React.Component {
   constructor() {
@@ -45,22 +46,8 @@ class Worklist extends React.Component {
                 "test1"
               ]
             },
-            {
-              id:5,
-              title:"Yu-Oh-Mai-Shin",
-              description: "hoge1",
-              images:[
-                "test2"
-              ]
-            },
-            {
-              id:6,
-              title:"Heisei and Reiwa",
-              description: "hoge1",
-              images:[
-                "test2"
-              ]
-            },
+            
+
             { id:7,
               title:"The Dusk",
               description: "hoge1",
@@ -68,14 +55,7 @@ class Worklist extends React.Component {
                 "test1"
               ]
             },
-            {
-              id:8,
-              title:"Geishun 2019",
-              description: "hoge1",
-              images:[
-                "test2"
-              ]
-            },
+            
             {
               id:9,
               title:"Geishun 2020",
@@ -282,13 +262,13 @@ class Worklist extends React.Component {
     var modal;
     if(category_id != "miscelleneous"){
       modal = this.state.works[category_id].portfolios.map( work =>
-        <div className="modal fade" id={category_id + work.id } tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div className="modal fade" id={category_id + work.id } tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered" role="document">
             <div className="modal-content">
 
               <div className="modal-body mb-0 p-0">
                 <div className="embed-responsive-16by9 z-depth-1-half">
-                  <img src={require('../images/' + category_id + '/' + work.id +'.png')} class="aligncenter" alt="clock01" className="w-100"/>
+                  <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="clock01" className="aligncenter w-100"/>
                 </div>  
               </div>
               <button type="button" className="btn btn-outline-light text-dark" data-dismiss="modal">Close</button>
@@ -302,7 +282,7 @@ class Worklist extends React.Component {
     
 
     const lis = this.state.works[category_id].portfolios.map( work =>
-      <li data-target="#carouselExampleIndicators" data-slide-to= {work.id - 1} class={ ((work.id) == 1) ? ("active") : ("")}></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to= {work.id - 1} className={ ((work.id) == 1) ? ("active") : ("")}></li>
     )
 
     var slides;
@@ -310,7 +290,7 @@ class Worklist extends React.Component {
       slides = this.state.works[category_id].portfolios.map( work =>
           <div class={ ((work.id) == 1) ? ("carousel-item active") : ("carousel-item")}>
             <Link className="" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + work.id}>
-              <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" class="d-block w-100"/>
+              <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" className="d-block w-100"/>
               <div className="mt-3 text-dark text-center">
                 <h6>{work.title}</h6>
               </div>
@@ -321,8 +301,8 @@ class Worklist extends React.Component {
       
     }else{
       slides = this.state.works[category_id].portfolios.map( work =>
-        <div class={ ((work.id) == 1) ? ("carousel-item active") : ("carousel-item")}>
-          <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" class="d-block w-100"/>
+        <div className={ ((work.id) == 1) ? ("carousel-item active") : ("carousel-item")}>
+          <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" className="d-block w-100"/>
           <div className="mt-3 text-dark text-center">
             <h6>{work.title}</h6>
           </div>
@@ -332,6 +312,23 @@ class Worklist extends React.Component {
     }
 
     return(
+      <motion.div
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      initial={{
+        y: 100,
+        opacity: 0
+      }}
+      exit={{
+        y: -100,
+        opacity: 0
+      }}
+      transition={{
+        duration: 0.2
+      }}
+   >
       <div className="container mt-5">
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb bg-white pl-0">
@@ -364,6 +361,7 @@ class Worklist extends React.Component {
           </a>
         </div>
       </div>
+      </motion.div>
     )
   }
 }
