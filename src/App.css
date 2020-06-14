@@ -45,6 +45,9 @@ p, dd, li{
 
 }
 
+.carousel-control-next, .carousel-control-prev{
+  bottom: 40px;
+}
 .carousel-indicators{
   bottom: -40px;
 }
