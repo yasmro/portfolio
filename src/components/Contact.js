@@ -41,7 +41,7 @@ class Contact extends Component {
 
   render(){
     const contacts = this.state.contacts.map( contact =>
-      <a href={contact.href} className="contact-box nav-link col-md-5 mr-md-2 col-12 mb-3 bg-light text-dark">
+      <a href={contact.href} className="contact-box nav-link col-md-5 mr-md-2 col-12 mb-2 bg-light text-dark">
         <div className="cover-img pt-2 pr-md-2" Style="background-image:url('../images/shodo/1.png');">
           <div className="mb-2">
             <i className={contact.icon + " fa-2x"}></i>
@@ -53,7 +53,9 @@ class Contact extends Component {
     )
 
     return(
-      <motion.div
+      
+      <div className="container mt-5">
+        <motion.div
       animate={{
         y: 0,
         opacity: 1
@@ -70,14 +72,36 @@ class Contact extends Component {
         duration: 0.2
       }}
    >
-      <div className="container mt-5">
         <h1 className="mb-5 text-center text-md-left">Contact</h1>
-      
+        </motion.div>
+
+        <motion.div
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      initial={{
+        y: 100,
+        opacity: 0
+      }}
+      exit={{
+        y: -100,
+        opacity: 0
+      }}
+      transition={{
+        duration: 0.2,
+        delay:0.2
+      }}
+   >
+        <div className="container">
         <div className="row">
           {contacts}
-        </div>   
-      </div>
+        </div>  
+        </div>
       </motion.div>
+         
+      </div>
+      
     )
   }
 }

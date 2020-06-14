@@ -18,7 +18,7 @@ export var state = {
           },
           {
             name: "C#, MySQL",
-            description: ""
+            description: "Basic Skill"
           }
         ]
         

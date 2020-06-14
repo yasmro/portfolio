@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { motion } from "framer-motion";
 
-import { state as skills } from './skills'
+import { state as skills } from '../data/skills'
 
 import '../style.css';
 
@@ -33,7 +33,8 @@ class About extends React.Component {
     )
 
     return(
-      <motion.div
+      <div className="container mt-5">
+        <motion.div
       animate={{
         y: 0,
         opacity: 1
@@ -50,8 +51,27 @@ class About extends React.Component {
         duration: 0.2
       }}
    >
-      <div className="container mt-5">
         <h1 className="mb-5 text-center text-md-left">About</h1>
+        </motion.div>
+
+        <motion.div
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      initial={{
+        y: 100,
+        opacity: 0
+      }}
+      exit={{
+        y: -100,
+        opacity: 0
+      }}
+      transition={{
+        duration: 0.2,
+        delay: 0.2
+      }}
+   >
         <div className="mt-5">
           <h2>Intro.</h2>
           <ul>
@@ -60,9 +80,28 @@ class About extends React.Component {
               <li>Blood Type: AB</li>
           </ul>
         </div>
+      </motion.div>
 
 
         <div className="mt-5">
+        <motion.div
+        animate={{
+          y: 0,
+          opacity: 1
+        }}
+        initial={{
+          y: 100,
+          opacity: 0
+        }}
+        exit={{
+          y: -100,
+          opacity: 0
+        }}
+        transition={{
+          duration: 0.2,
+          delay:0.4
+        }}
+     >
             <h2>Career</h2>
             <div className = "contents-works">
             <div className="resume-date">
@@ -119,17 +158,38 @@ class About extends React.Component {
               <h4>National Institute of Technology, Nara College</h4>
               <p>Dept. Information Engineering / Associate Degree</p>
             </div>
+            </motion.div>
         </div> 
 
+        <motion.div
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      initial={{
+        y: 100,
+        opacity: 0
+      }}
+      exit={{
+        y: -100,
+        opacity: 0
+      }}
+      transition={{
+        duration: 0.2,
+        delay:0.6
+      }}
+   >
         <div className="mt-5">
+        
           <h2>Skills</h2>
           <div className="row">
             {skills}
           </div>
         </div>
+        </motion.div>
 
       </div>
-      </motion.div>
+      
       
       )
   }

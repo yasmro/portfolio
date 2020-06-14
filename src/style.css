@@ -21,6 +21,10 @@ span.resume-date{
 
 
 /* Works */
+.works-category-box{
+  height: 130px;
+}
+
 .contents-works{
 	margin-bottom: 50px;
 }
@@ -33,7 +37,7 @@ span.resume-date{
 
 /* contacts */
 .contact-box{
-  height: 100px;
+  height: 130px;
 }
 
 .social-icons a {
