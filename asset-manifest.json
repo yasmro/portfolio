@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolioreact2020/static/css/main.b76a1ec8.chunk.css",
-    "main.js": "/portfolioreact2020/static/js/main.f9f05667.chunk.js",
-    "main.js.map": "/portfolioreact2020/static/js/main.f9f05667.chunk.js.map",
+    "main.css": "/portfolioreact2020/static/css/main.69fee85f.chunk.css",
+    "main.js": "/portfolioreact2020/static/js/main.3ee1e3c1.chunk.js",
+    "main.js.map": "/portfolioreact2020/static/js/main.3ee1e3c1.chunk.js.map",
     "runtime-main.js": "/portfolioreact2020/static/js/runtime-main.8d6ff0cb.js",
     "runtime-main.js.map": "/portfolioreact2020/static/js/runtime-main.8d6ff0cb.js.map",
     "static/js/2.affe800f.chunk.js": "/portfolioreact2020/static/js/2.affe800f.chunk.js",
     "static/js/2.affe800f.chunk.js.map": "/portfolioreact2020/static/js/2.affe800f.chunk.js.map",
     "index.html": "/portfolioreact2020/index.html",
-    "precache-manifest.ffca1f48ffffa81a04ac8e929d9da643.js": "/portfolioreact2020/precache-manifest.ffca1f48ffffa81a04ac8e929d9da643.js",
+    "precache-manifest.4dea39cc68a994a973a751337c1bff6c.js": "/portfolioreact2020/precache-manifest.4dea39cc68a994a973a751337c1bff6c.js",
     "service-worker.js": "/portfolioreact2020/service-worker.js",
-    "static/css/main.b76a1ec8.chunk.css.map": "/portfolioreact2020/static/css/main.b76a1ec8.chunk.css.map",
+    "static/css/main.69fee85f.chunk.css.map": "/portfolioreact2020/static/css/main.69fee85f.chunk.css.map",
     "static/js/2.affe800f.chunk.js.LICENSE.txt": "/portfolioreact2020/static/js/2.affe800f.chunk.js.LICENSE.txt",
     "static/media/1.png": "/portfolioreact2020/static/media/1.e7988f62.png",
     "static/media/11.png": "/portfolioreact2020/static/media/11.6d589b07.png",
@@ -37,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.8d6ff0cb.js",
     "static/js/2.affe800f.chunk.js",
-    "static/css/main.b76a1ec8.chunk.css",
-    "static/js/main.f9f05667.chunk.js"
+    "static/css/main.69fee85f.chunk.css",
+    "static/js/main.3ee1e3c1.chunk.js"
   ]
 }
