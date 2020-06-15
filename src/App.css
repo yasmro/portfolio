@@ -19,7 +19,7 @@
 
 /* , 'Roboto' 'Roboto Condensed',  */
 *{
-  font-family: neue-haas-grotesk-text, dnp-shuei-gothic-kin-std, europa, brix-slab,  sans-serif;
+  font-family: kozuka-gothic-pr6n, neue-haas-grotesk-text, dnp-shuei-gothic-kin-std, europa, brix-slab,  sans-serif;
   font-weight: 400;
   
 }
@@ -29,7 +29,7 @@ h1{
 }
 
 h2, h3, h4, h5, h6, dt, span.resume-date, .nav-link, .header{
-  font-family:  neue-haas-grotesk-display, brix-slab, fot-rodin-pron;
+  font-family:  kozuka-gothic-pr6n, neue-haas-grotesk-display, brix-slab, fot-rodin-pron;
 }
 
 p, dd, li{
