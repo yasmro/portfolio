@@ -6,7 +6,9 @@
   /*display: none;*/
 }
 
-
+.navBarLogo{
+  height: 1.8rem;
+}
 
 div.resume-date{
     margin-bottom: 8px;

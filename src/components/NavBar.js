@@ -12,7 +12,7 @@ class NavBar extends Component {
       <div className="">
         <nav className={ "navbar navbar-expand-lg navbar-light fixed-top pl-lg-5 " + color} id="navbar">
           <Link className="navbar-brand" to={process.env.PUBLIC_URL + "/"}>
-            <img src={require('../images/name.png')} className="aligncenter mr-2" alt="shodo03" Style="height: 1.8rem;"/>
+            <img src={require('../images/name.png')} className="aligncenter mr-2 navBarLogo" alt="shodo03"/>
           </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

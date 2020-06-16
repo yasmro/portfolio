@@ -16,10 +16,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
 
 /* , 'Roboto' 'Roboto Condensed',  */
 *{
-  font-family: kozuka-gothic-pr6n, neue-haas-grotesk-text, dnp-shuei-gothic-kin-std, europa, brix-slab,  sans-serif;
+  font-family: 'Noto Serif JP', 'Roboto Condensed', kozuka-gothic-pr6n, neue-haas-grotesk-text, dnp-shuei-gothic-kin-std, europa, brix-slab,  sans-serif;
   font-weight: 400;
   
 }
@@ -29,7 +30,7 @@ h1{
 }
 
 h2, h3, h4, h5, h6, dt, span.resume-date, .nav-link, .header{
-  font-family:  kozuka-gothic-pr6n, neue-haas-grotesk-display, brix-slab, fot-rodin-pron;
+  font-family:  kozuka-gothic-pr6n,'Noto Serif JP', 'Roboto Condensed',  neue-haas-grotesk-display, brix-slab, fot-rodin-pron;
 }
 
 p, dd, li{

@@ -70,7 +70,7 @@ class Worklist extends React.Component {
     var slides;
     if(category_id == "miscelleneous"){
       slides = this.state.works[category_id].portfolios.map( work =>
-          <div class={ ((work.id) == 1) ? ("carousel-item active") : ("carousel-item")}>
+          <div className={ ((work.id) == 1) ? ("carousel-item active") : ("carousel-item")}>
             <Link className="" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + work.id}>
               <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" className="d-block w-100"/>
               <div className="mt-3 text-dark text-center">
@@ -94,6 +94,7 @@ class Worklist extends React.Component {
     }
 
     return(
+      <div className="container mt-5">
       <motion.div
       animate={{
         y: 0,
@@ -110,17 +111,37 @@ class Worklist extends React.Component {
       transition={{
         duration: 0.2
       }}
-   >
-      <div className="container mt-5">
-        <nav aria-label="breadcrumb">
+      >
+         <nav aria-label="breadcrumb">
           <ol className="breadcrumb bg-white pl-0">
             <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/"}>Works</Link></li>
             <li className="breadcrumb-item active" aria-current="page">{category.name}</li>
           </ol>
         </nav>
+
         <h2>{category.name}</h2>
         <p>{category.description}</p>
         
+      </motion.div>
+       
+      <motion.div
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      initial={{
+        y: 100,
+        opacity: 0
+      }}
+      exit={{
+        y: -100,
+        opacity: 0
+      }}
+      transition={{
+        duration: 0.2,
+        delay:0.2
+      }}
+      >
         <div className="row d-none d-md-flex">
           {works}          
         </div>
@@ -142,8 +163,9 @@ class Worklist extends React.Component {
             <span className="sr-only">Next</span>
           </a>
         </div>
+        </motion.div>
       </div>
-      </motion.div>
+      
     )
   }
 }

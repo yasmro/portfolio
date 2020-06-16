@@ -41,7 +41,7 @@ class Contact extends Component {
 
   render(){
     const contacts = this.state.contacts.map( contact =>
-      <a href={contact.href} className="contact-box nav-link col-md-5 mr-md-2 col-12 mb-2 bg-light text-dark">
+      <a href={contact.href} className="contact-box nav-link col-md-5 mr-md-2 col-12 mb-2 bg-light text-dark" key={contact.id}>
         <div className="cover-img pt-2 pr-md-2" Style="background-image:url('../images/shodo/1.png');">
           <div className="mb-2">
             <i className={contact.icon + " fa-2x"}></i>
