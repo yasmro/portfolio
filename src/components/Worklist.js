@@ -95,7 +95,14 @@ class Worklist extends React.Component {
 
     return(
       <div className="container mt-5">
-      <motion.div
+ 
+         <nav aria-label="breadcrumb">
+          <ol className="breadcrumb bg-white pl-0">
+            <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/"}>Works</Link></li>
+            <li className="breadcrumb-item active d-md-inline d-none" aria-current="page">{category.name}</li>
+          </ol>
+        </nav>
+        <motion.div
       animate={{
         y: 0,
         opacity: 1
@@ -112,13 +119,6 @@ class Worklist extends React.Component {
         duration: 0.2
       }}
       >
-         <nav aria-label="breadcrumb">
-          <ol className="breadcrumb bg-white pl-0">
-            <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/"}>Works</Link></li>
-            <li className="breadcrumb-item active" aria-current="page">{category.name}</li>
-          </ol>
-        </nav>
-
         <h2>{category.name}</h2>
         <p>{category.description}</p>
         
@@ -147,7 +147,7 @@ class Worklist extends React.Component {
         </div>
           {modal}
 
-        <div id="carouselExampleIndicators" className="carousel slide  hover d-md-none" data-ride="carousel">
+        <div id="carouselExampleIndicators" className="carousel slide hover d-md-none" data-ride="carousel">
           <div className="carousel-inner">
             {slides}
           </div>

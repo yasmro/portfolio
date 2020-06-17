@@ -1,17 +1,47 @@
 import React, { Component } from 'react';
+import { useState } from "react";
 import {BrowserRouter, Route, Link} from 'react-router-dom';
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 import { state as portfolios } from '../data/portfolios';
 
 import '../style.css';
 
+// var postVariants = {
+//   initial: (direction: number) => {
+//     return {
+//       x: direction > 0 ? -100 : 100,
+//       scale: 1, y: 0, opacity: 0, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] } 
+//     };
+//   },
+//   enter: { scale: 1, x:0, y: 0, opacity: 1, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] } },
+//   exit: (direction: number) => {
+//     return {
+//       x: direction > 0 ? 100 : -100,
+//       scale: 1, y: 0, opacity: 0, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] } 
+//     };
+//   },
+// };
+
+const postVariants = {
+  initial: {x: 0, y: 100, scale: 1, opacity: 0, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] }},
+  enter: {  x:0, y: 0, scale: 1, opacity: 1, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] } },
+  exit: {x: 0, y: 0, scale: 1, opacity: 0, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] }},
+};
+
+var direction = -1;
+function change(newDirection) {
+  direction = newDirection
+}
+
 class WorkDetail extends React.Component {
 
   constructor() {
     super();
     this.state = portfolios;
+    
+    
   }
 
   render(){
@@ -84,42 +114,33 @@ class WorkDetail extends React.Component {
     }
     
     return(
-      
-      <div className="container mt-5">
-        <motion.div
-      animate={{
-        y: 0,
-        opacity: 1
-      }}
-      initial={{
-        y: 100,
-        opacity: 0
-      }}
-      exit={{
-        y: -100,
-        opacity: 0
-      }}
-      transition={{
-        duration: 0.2
-      }}
-      >
-        <nav aria-label="breadcrumb">
-          <ol className="breadcrumb bg-white pl-0">
-            <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/"}>Works</Link></li>
-            <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/"}>{category.name}</Link></li>
-            <li className="breadcrumb-item active" aria-current="page">{work.title}</li>
-          </ol>
-        </nav>
 
-        {/* <div className="counter position-absolute" style={{right: 0 + 'em'}}> */}
-        <div className="counter mb-1">
-          <Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + prev_id} className=""><button className="btn btn-sm btn-light rounded-0">&lt;</button></Link>
-          <div className = "ml-3 mr-3 d-inline-block">
-            <span className="h4 font-weight-bolder">{('0' + work.id).slice(-2)}</span><span className="">/{('0' + category.portfolios.length).slice(-2)}</span>
+        <div className="container mt-5">
+        <motion.div variants={postVariants} >
+          <div className="container row mb-1 pl-0 pr-0">
+            <nav aria-label="breadcrumb" className="col-6 col-md-8 col-lg-9">
+              <ol className="breadcrumb bg-white pl-0">
+                <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/"}>Works</Link></li>
+                <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/"}>{category.name}</Link></li>
+                <li className="breadcrumb-item active d-md-inline d-none" aria-current="page">{work.title}</li>
+              </ol>
+            </nav>
+            <div className="counter col-6 col-md-4 col-lg-3 text-right pr-0">
+              <Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + prev_id} className="" onClick={change(-1)}><button className="btn btn-sm btn-light rounded-0">&lt;</button></Link>
+              <div className = "ml-3 mr-3 d-inline-block">
+                <span className="h2 font-weight-bolder">{('0' + work.id).slice(-2)}</span><span className="text-dark">/{('0' + category.portfolios.length).slice(-2)}</span>
+              </div>
+              <Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + next_id} className="" onClick={change(1)}><button className="btn btn-sm btn-light rounded-0">&gt;</button></Link>
+            </div>
           </div>
-          <Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + next_id} className=""><button className="btn btn-sm btn-light rounded-0">&gt;</button></Link>
-        </div>
+          
+        </motion.div>
 
+        <AnimatePresence exitBeforeEnter>
+        <motion.div initial="initial" animate="enter" exit="exit" key={work.id} >
+        <motion.div variants={postVariants} >
+        {/* <div className="counter position-absolute" style={{right: 0 + 'em'}}> */}
+        
         <h4><span class="badge badge-dark rounded-0">{work.category}</span></h4>
         <h2>{work.title}</h2>
         </motion.div>
@@ -133,45 +154,11 @@ class WorkDetail extends React.Component {
             classNames="fade"
           > */}
 
-        <motion.div
-      animate={{
-        y: 0,
-        opacity: 1
-      }}
-      initial={{
-        y: 100,
-        opacity: 0
-      }}
-      exit={{
-        y: -100,
-        opacity: 0
-      }}
-      transition={{
-        duration: 0.2,
-        delay:0.2
-      }}
-      >
+        <motion.div variants={postVariants} >
         <p>{work.abstract}</p>
         </motion.div>
 
-        <motion.div
-      animate={{
-        y: 0,
-        opacity: 1
-      }}
-      initial={{
-        y: 100,
-        opacity: 0
-      }}
-      exit={{
-        y: -100,
-        opacity: 0
-      }}
-      transition={{
-        duration: 0.2,
-        delay:0.4
-      }}
-      >
+        <motion.div variants={postVariants} >
         <div className="pt-1">
           {description}
         </div>
@@ -180,8 +167,10 @@ class WorkDetail extends React.Component {
 
         {/* </CSSTransition>
         </SwitchTransition> */}
-
+        </motion.div>
+        </AnimatePresence>
       </div>
+
       
       
       )
