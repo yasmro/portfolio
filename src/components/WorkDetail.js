@@ -46,7 +46,7 @@ class WorkDetail extends React.Component {
 
   render(){
     const category_id = this.props.match.params.category;
-    const id = this.props.match.params.id - 1;
+    const id = this.props.match.params.id;
     const category = this.state.works[category_id];
     const work = category.portfolios[id];
     const key = work.key;
@@ -105,10 +105,12 @@ class WorkDetail extends React.Component {
         </div>
       )
       
-      var present_id = work.id - 1;
+      var present_id = parseInt(id);
+      var pageNumber = parseInt(id) + 1 ;
       var max_id = category.portfolios.length;
-      var prev_id = ( (present_id - 1 + max_id) % max_id) + 1;
-      var next_id = ( (present_id + 1 + max_id) % max_id) + 1;
+      var prev_id = (present_id - 1 + max_id) % max_id;
+      var next_id = (present_id + 1 + max_id) % max_id;
+
     }catch{
       
     }
@@ -127,17 +129,18 @@ class WorkDetail extends React.Component {
             </nav>
             <div className="counter col-3 d-md-none text-right pr-0">
               <div className = "d-block mb-1">
-                <span className="h2 font-weight-bolder">{('0' + work.id).slice(-2)}</span><span className="text-dark">/{('0' + category.portfolios.length).slice(-2)}</span>
+                <span className="h2 font-weight-bolder">{('0' + (pageNumber)).slice(-2)}</span><span className="text-dark">/{('0' + max_id).slice(-2)}</span>
               </div>
               <div className = "justify-content-between">
                 <Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + prev_id} className="" onClick={change(-1)}><button className="btn btn-sm btn-light rounded-0 mr-2">&lt;</button></Link>
                 <Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + next_id} className="" onClick={change(1)}><button className="btn btn-sm btn-light rounded-0">&gt;</button></Link>
               </div>
             </div>
+
             <div className="counter d-none d-md-block col-md-4 col-lg-3 text-right pr-0">
               <Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + prev_id} className="" onClick={change(-1)}><button className="btn btn-sm btn-light rounded-0">&lt;</button></Link>
               <div className = "ml-3 mr-3 d-inline-block">
-                <span className="h2 font-weight-bolder">{('0' + work.id).slice(-2)}</span><span className="text-dark">/{('0' + category.portfolios.length).slice(-2)}</span>
+                <span className="h2 font-weight-bolder">{('0' + (pageNumber)).slice(-2)}</span><span className="text-dark">/{('0' + max_id).slice(-2)}</span>
               </div>
               <Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + next_id} className="" onClick={change(1)}><button className="btn btn-sm btn-light rounded-0">&gt;</button></Link>
             </div>

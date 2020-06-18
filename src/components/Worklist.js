@@ -17,8 +17,8 @@ class Worklist extends React.Component {
 
     var works;
     if(category_id == "miscelleneous"){
-      works = this.state.works[category_id].portfolios.map( work =>
-        <Link className="nav-link col-lg-4 col-md-6 col-12 text-dark" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + work.id}>
+      works = this.state.works[category_id].portfolios.map( (work,index) =>
+        <Link className="nav-link col-lg-4 col-md-6 col-12 text-dark" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + index}>
           <div className="cover-img pb-5 thumbnail">
             <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt={category_id + "_" + work.id} className = "bwWrapper pb-1 w-100"/>
             <div className="about-text">
@@ -29,7 +29,7 @@ class Worklist extends React.Component {
 
       )
     }else{
-      works = this.state.works[category_id].portfolios.map( work =>
+      works = this.state.works[category_id].portfolios.map( (work,index) =>
         <div className="nav-link col-lg-4 col-md-6 col-12 text-dark" >
           <div className="cover-img pb-5 thumbnail">
             <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt={category_id + "_" + work.id} data-toggle="modal" data-target= { "#" + category_id + work.id } className = "bwWrapper pb-1 w-100"/>
@@ -43,7 +43,7 @@ class Worklist extends React.Component {
 
     var modal;
     if(category_id != "miscelleneous"){
-      modal = this.state.works[category_id].portfolios.map( work =>
+      modal = this.state.works[category_id].portfolios.map( (work,index) =>
         <div className="modal fade" id={category_id + work.id } tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered" role="document">
             <div className="modal-content">
@@ -71,7 +71,7 @@ class Worklist extends React.Component {
     if(category_id == "miscelleneous"){
       slides = this.state.works[category_id].portfolios.map( (work, index) =>
           <div className={ ((index) == 0) ? ("carousel-item active") : ("carousel-item")}>
-            <Link className="" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + work.id}>
+            <Link className="" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + index}>
               <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" className="d-block w-100"/>
               <div className="mt-3 text-dark text-center">
                 <h6>{work.title}</h6>

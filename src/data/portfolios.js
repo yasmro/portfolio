@@ -107,7 +107,8 @@ export var state = {
       description: "Design and Develop with XML, CSS and JavaScript on Fitbit Ionic",
       imageUrl: "watchface",
       portfolios:[
-        { id:1,
+        {
+          id:1,
          title:"",
          description: "hoge1",
          images:[
@@ -155,6 +156,7 @@ export var state = {
       description: "Others",
       imageUrl: "mis",
       portfolios:[
+  
         { id:1,
           key: "sas",
           category: "Mobile App",
@@ -204,20 +206,6 @@ export var state = {
             header: "Used Technologies",
             contents:"Arduino, Frizing, Tera Term, Fusion360, Mathematics(3D-polar-coordinates)"
           },
-          // {
-          //   type: "link",
-          //   header: "aaaa",
-          //   links: [
-          //     {
-          //       name: "A",
-          //       href: "a"
-          //     },
-          //     {
-          //       name: "B",
-          //       href: "b"
-          //     }
-          //   ]
-          // },
           {
             type: "images",
             header: "",
@@ -229,20 +217,30 @@ export var state = {
           }
         ]
       },
-       {
-         id:3,
-         key: "design_presentation",
-        category: "Slide Design",
-         title:"How to Design Presentation",
-         technologies: "PowerPoint (Japanese)",
-         abstract: "I received some requests about improving presentation slides. Through using experiences I created ebook about how to design and make better presentation material for novices. before.",
-         description:[
-
-         ],
-         images:[
-           "test2"
-         ]
-       },
+      //  {
+      //    id:3,
+      //    key: "design_presentation",
+      //   category: "Slide Design",
+      //    title:"How to Design Presentation",
+      //    technologies: "PowerPoint (Japanese)",
+      //    abstract: "I received some requests about improving presentation slides. Through using experiences I created ebook about how to design and make better presentation material for novices. before.",
+      //    description:[
+      //     {
+      //       type: "link",
+      //       header: "",
+      //       links: [
+      //         {
+      //           name: "Download Here (PDF file)",
+      //           // href: "../images/HowToDesignPresentationV1_0.pdf"
+      //           href: "https://yasmro.github.io/portfolio-old/img/HowToDesignPresentationV1_0.pdf"
+      //         }
+      //       ]
+      //     },
+      //    ],
+      //    images:[
+      //      "test2"
+      //    ]
+      //  },
        {
         id:4,
         key: "random_correction",
@@ -257,20 +255,20 @@ export var state = {
           "test2"
         ]
       },
-      {
-        id:5,
-        title:"Enmel",
-        key: "enmel",
-        category: "Web Design",
-        technologies: "Design, Develop and Maintain Web page with HTML, CSS and JavaScript",
-        abstract: "Enmel is a Web system which manages and shares the recipes(e.g. ingredients, procedures preparation/finish, allergy etc.) for restaurant or pastry chef. In addition, applying recipe data expected business efficiency such as cost accounting, material management, customer management, their schedule management and so on.",
-        description:[
+      // {
+      //   id:5,
+      //   title:"Enmel",
+      //   key: "enmel",
+      //   category: "Web Design",
+      //   technologies: "Design, Develop and Maintain Web page with HTML, CSS and JavaScript",
+      //   abstract: "Enmel is a Web system which manages and shares the recipes(e.g. ingredients, procedures preparation/finish, allergy etc.) for restaurant or pastry chef. In addition, applying recipe data expected business efficiency such as cost accounting, material management, customer management, their schedule management and so on.",
+      //   description:[
            
-        ],
-        images:[
-          "test2"
-        ]
-      },
+      //   ],
+      //   images:[
+      //     "test2"
+      //   ]
+      // },
       {
         id:6,
         title:"Own Portfolio Sites",
