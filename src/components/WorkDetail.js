@@ -118,14 +118,14 @@ class WorkDetail extends React.Component {
         <div className="container mt-3 mt-md-5">
         <motion.div variants={postVariants} >
           <div className="container row mb-1 pl-0 pr-0">
-            <nav aria-label="breadcrumb" className="col-10 col-md-8 col-lg-9">
+            <nav aria-label="breadcrumb" className="col-9 col-md-8 col-lg-9">
               <ol className="breadcrumb bg-white pl-0">
                 <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/"}>Works</Link></li>
                 <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/"}>{category.name}</Link></li>
                 <li className="breadcrumb-item active d-md-inline d-none" aria-current="page">{work.title}</li>
               </ol>
             </nav>
-            <div className="counter col-2 d-md-none text-center pr-0">
+            <div className="counter col-3 d-md-none text-right pr-0">
               <div className = "d-block mb-1">
                 <span className="h2 font-weight-bolder">{('0' + work.id).slice(-2)}</span><span className="text-dark">/{('0' + category.portfolios.length).slice(-2)}</span>
               </div>
