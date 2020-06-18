@@ -63,14 +63,14 @@ class Worklist extends React.Component {
 
     
 
-    const lis = this.state.works[category_id].portfolios.map( work =>
-      <li data-target="#carouselExampleIndicators" data-slide-to= {work.id - 1} className={ ((work.id) == 1) ? ("active") : ("")}></li>
+    const lis = this.state.works[category_id].portfolios.map( (work, index) =>
+      <li data-target="#carouselExampleIndicators" data-slide-to= {index} className={ ((index) == 0) ? ("active") : ("")}></li>
     )
 
     var slides;
     if(category_id == "miscelleneous"){
-      slides = this.state.works[category_id].portfolios.map( work =>
-          <div className={ ((work.id) == 1) ? ("carousel-item active") : ("carousel-item")}>
+      slides = this.state.works[category_id].portfolios.map( (work, index) =>
+          <div className={ ((index) == 0) ? ("carousel-item active") : ("carousel-item")}>
             <Link className="" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + work.id}>
               <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" className="d-block w-100"/>
               <div className="mt-3 text-dark text-center">
@@ -82,8 +82,8 @@ class Worklist extends React.Component {
       )
       
     }else{
-      slides = this.state.works[category_id].portfolios.map( work =>
-        <div className={ ((work.id) == 1) ? ("carousel-item active") : ("carousel-item")}>
+      slides = this.state.works[category_id].portfolios.map( (work, index) =>
+        <div className={ ((index) == 0) ? ("carousel-item active") : ("carousel-item")}>
           <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" className="d-block w-100"/>
           <div className="mt-3 text-dark text-center">
             <h6>{work.title}</h6>
@@ -94,9 +94,9 @@ class Worklist extends React.Component {
     }
 
     return(
-      <div className="container mt-5">
+      <div className="container mt-3 mt-md-5">
  
-         <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb">
           <ol className="breadcrumb bg-white pl-0">
             <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/"}>Works</Link></li>
             <li className="breadcrumb-item active d-md-inline d-none" aria-current="page">{category.name}</li>
@@ -162,7 +162,20 @@ class Worklist extends React.Component {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="sr-only">Next</span>
           </a>
+
+          {/* <div className = "text-center">
+            <a className="" href="#carouselExampleIndicators" role="button" data-slide="prev"><button className="btn btn-sm btn-light rounded-0">&lt;</button></a>
+              <span className="h2 font-weight-bolder pl-3">{('0' + "2").slice(-2)}</span><span className="pr-3 text-dark">/{('0' + category.portfolios.length).slice(-2)}</span>
+            <a className="" href="#carouselExampleIndicators" role="button" data-slide="next"><button className="btn btn-sm btn-light rounded-0">&gt;</button></a>
+          </div> */}
+          
         </div>
+
+
+        
+
+
+   
         </motion.div>
       </div>
       

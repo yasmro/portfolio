@@ -104,9 +104,8 @@ class About extends React.Component {
      >
             <h2>Career</h2>
             <div className = "contents-works">
-            <div className="resume-date">
-                <span className="resume-date">April 2019 – Now</span>
-            </div> 
+              <h5><span class="badge badge-dark rounded-0 pl-3 pr-3">April 2019 – Now</span></h5>
+
               <h4>Zoho Japan Corporation</h4>
               <p>Post support for 7 products with Indian (Global-HQ) team</p>
               <ul>
@@ -116,17 +115,13 @@ class About extends React.Component {
             </div>
 
             <div className = "contents-works enmel">
-              <div className="resume-date">
-                  <span className="resume-date">April 2018 – May 2019</span>
-              </div> 
+              <h5><span class="badge badge-dark rounded-0 pl-3 pr-3">April 2018 – May 2019</span></h5>
               <h4>Enmel inc.</h4>
               <p>Design, Develop and Maintain Enmel Web service with HTML, CSS and JavaScript</p>
             </div>
 
             <div className = "contents-works">
-              <div className="resume-date">
-                  <span className="resume-date">April 2017 – March 2019</span>
-              </div>
+              <h5><span class="badge badge-dark rounded-0 pl-3 pr-3">April 2017 – March 2019</span></h5>
               <h4>National Institute of Technology, Nara College</h4>
               <p>Advanced Information Engineering course / Bachelor Degree (Engineering)</p>
               <button type="button" className="btn btn-light border-dark rounded-0 btn-sm" data-toggle="collapse" data-target="#projectDetail" aria-expanded="false" aria-controls="collapseExample">
@@ -152,9 +147,7 @@ class About extends React.Component {
             </div>
 
             <div className = "contents-works">
-              <div className="resume-date">
-                  <span className="resume-date">April 2012 – March 2017</span>
-              </div>
+              <h5><span class="badge badge-dark rounded-0 pl-3 pr-3">April 2012 – March 2017</span></h5>
               <h4>National Institute of Technology, Nara College</h4>
               <p>Dept. Information Engineering / Associate Degree</p>
             </div>
