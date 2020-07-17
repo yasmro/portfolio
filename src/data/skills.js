@@ -2,19 +2,23 @@ export var state = {
     skills: [
       {
         id: 1,
-        category: "Programming",
+        category: "Technologies",
         skills:[
           {
+            name: "Fundamental Information Technology Engineer",
+            description: "National qualifications in Japan (Got it on 2015)"
+          },
+          {
             name: "HTML5 / CSS3",
-            description: "Bootstrap 4 and Web design"
+            description: "Bootstrap and Web design"
           },
           {
             name: "JavaScript",
-            description: "Available for jQuery and native. Also, I'm learning ReactJS now."
+            description: "Available for jQuery and native. Also, I'm learning ReactJS now"
           },
           {
             name: "Java, R, Shell Script",
-            description: "Analyze student's activity data in programming lectures"
+            description: "Collected student's activity data in programming lectures and calculated parameters related to each student's activites with Java, Shell Script. Also calculated the correlation and took Welch's t-test between the student's score and each parameters with R."
           },
           {
             name: "C#, MySQL",
@@ -29,7 +33,7 @@ export var state = {
         skills:[
           {
             name: "Graphical Design",
-            description: "PowerPoint, Image and Clockface on smartwatch"
+            description: "PowerPoint/Keynote slides, images and clockfaces on smartwatch"
           },
           {
             name: "Web Design",

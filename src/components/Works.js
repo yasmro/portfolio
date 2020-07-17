@@ -1,31 +1,70 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import NavBar from './NavBar'
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 import { state as portfolios } from '../data/portfolios';
 
 import { motion } from "framer-motion";
 
+const variants = {
+  open: {
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+  },
+  closed: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 }
+  }
+};
+
+const variantsli = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 }
+    }
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 }
+    }
+  }
+};
+
+
 class Works extends Component {
+
+  componentDidMount() {
+    var section = "Works";
+    var title = " – Yasmro's Portfolio 2020"
+    document.title = section + title;
+  }
+
   constructor() {
     super();
     this.state = portfolios;
+    window.scrollTo(0, 0);
   }
 
 
   render(){
-    const categories = this.state.works.categories.map( category =>
-      <Link className="nav-link col-lg-5 mr-lg-2 col-12 mb-2 bg-light text-dark" to={process.env.PUBLIC_URL + "/works/" + category.id}>
-        <div className="cover-img pt-2 pr-md-2 works-category-box" Style="background-image:url('../images/shodo/1.png');">
-          <div className="about-text">
-            <h3>{category.name}</h3>
-            <p>{category.description}</p>
+    const categories = this.state.works.categories.map( (category, i) =>
+        <Link className="nav-link col-lg-5 mr-lg-2 col-12 mb-2 bg-light text-dark" key={i} to={process.env.PUBLIC_URL + "/works/" + category.id}>
+          <div className="cover-img pt-2 pr-md-2 works-category-box" Style="background-image:url('../images/shodo/1.png');">
+            <div className="about-text">
+              <h3>{category.name}</h3>
+              <p className="" style={{"font-style" : "normal"}}>{category.description}</p>
+            </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+
     )
 
     return(
+      <>
+      <NavBar />
       <div className="container mt-5">
         <motion.div
         animate={{
@@ -44,7 +83,8 @@ class Works extends Component {
           duration: 0.2
         }}
      >
-        <h1 className="mb-5 text-center text-md-left">Works</h1>
+        <h1 className="mb-5 d-none d-md-block text-md-left display-4">Works</h1>
+        <h1 className="mb-5 d-block d-md-none text-center">Works</h1>
       </motion.div>
       <motion.div
         animate={{
@@ -60,19 +100,25 @@ class Works extends Component {
           opacity: 0
         }}
         transition={{
-          duration: 0.2,
-          delay: 0.2
+          delay:0.1,
+          duration: 0.2
         }}
      >
-        <div className="container">
-          <div className="row">
+        <div className="container mb-5">
+        <motion.div
+            className="row"
+            variants={variantsli}
+        >
             {categories}
-          </div>     
+        </motion.div>
+       
+          
+          
             
         </div>
-        </motion.div>
+      </motion.div>
       </div>
-      
+      </>
     )
   }
 

@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import { motion } from 'framer-motion';
+import NavBar from './NavBar'
 
 class Contact extends Component {
+  componentDidMount() {
+    var section = "Contact";
+    var title = " – Yasmro's Portfolio 2020"
+    document.title = section + title;
+
+  }
 
   constructor() {
     super();
+    window.scrollTo(0, 0);
     this.state = {
       contacts: [
         {
@@ -40,6 +48,7 @@ class Contact extends Component {
   }
 
   render(){
+    
     const contacts = this.state.contacts.map( contact =>
       <a href={contact.href} className="contact-box nav-link col-md-5 mr-md-2 col-12 mb-2 bg-light text-dark" key={contact.id}>
         <div className="cover-img pt-2 pr-md-2" Style="background-image:url('../images/shodo/1.png');">
@@ -47,13 +56,14 @@ class Contact extends Component {
             <i className={contact.icon + " fa-2x"}></i>
             <span className="header h3 position-absolute" Style="left: 56px;">{contact.name}</span>
           </div>
-          <p>{contact.url}</p>
+          <p className="" style={{"font-style" : "normal"}}>{contact.url}</p>
         </div>
       </a>
     )
 
     return(
-      
+      <>
+      <NavBar />
       <div className="container mt-5">
         <motion.div
       animate={{
@@ -72,7 +82,8 @@ class Contact extends Component {
         duration: 0.2
       }}
    >
-        <h1 className="mb-5 text-center text-md-left">Contact</h1>
+        <h1 className="mb-5 d-none d-md-block text-md-left display-4">Contact</h1>
+        <h1 className="mb-5 d-block d-md-none text-center">Contact</h1>
         </motion.div>
 
         <motion.div
@@ -93,7 +104,7 @@ class Contact extends Component {
         delay:0.2
       }}
    >
-        <div className="container">
+        <div className="container mb-5">
         <div className="row">
           {contacts}
         </div>  
@@ -101,6 +112,7 @@ class Contact extends Component {
       </motion.div>
          
       </div>
+      </>
       
     )
   }

@@ -1,25 +1,36 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
+import NavBar from './NavBar'
 import { motion } from "framer-motion";
 
 import { state as portfolios } from '../data/portfolios';
 
 class Worklist extends React.Component {
+
+  componentDidMount() {
+
+  }
+
   constructor() {
     super();
     this.state = portfolios;
+    window.scrollTo(0, 0);
   }
 
   render(){
     const category_id = this.props.match.params.category;
     const category = this.state.works[category_id];
 
+    var section = category.name;
+    var title = " – Yasmro's Portfolio 2020"
+    document.title = section + title;
+
     var works;
-    if(category_id == "miscelleneous"){
+    if(category_id == "miscelleneous" || category_id == "webdesign"){
       works = this.state.works[category_id].portfolios.map( (work,index) =>
         <Link className="nav-link col-lg-4 col-md-6 col-12 text-dark" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + index}>
-          <div className="cover-img pb-5 thumbnail">
+          <div className="cover-img pb-3 thumbnail">
             <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt={category_id + "_" + work.id} className = "bwWrapper pb-1 w-100"/>
             <div className="about-text">
               <h5>{work.title}</h5>
@@ -31,7 +42,7 @@ class Worklist extends React.Component {
     }else{
       works = this.state.works[category_id].portfolios.map( (work,index) =>
         <div className="nav-link col-lg-4 col-md-6 col-12 text-dark" >
-          <div className="cover-img pb-5 thumbnail">
+          <div className="cover-img pb-3 thumbnail">
             <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt={category_id + "_" + work.id} data-toggle="modal" data-target= { "#" + category_id + work.id } className = "bwWrapper pb-1 w-100"/>
             <div className="about-text">
               <h5>{work.title}</h5>
@@ -42,7 +53,7 @@ class Worklist extends React.Component {
     }
 
     var modal;
-    if(category_id != "miscelleneous"){
+    if(category_id != "miscelleneous" || category_id != "webdesign"){
       modal = this.state.works[category_id].portfolios.map( (work,index) =>
         <div className="modal fade" id={category_id + work.id } tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered" role="document">
@@ -68,7 +79,7 @@ class Worklist extends React.Component {
     )
 
     var slides;
-    if(category_id == "miscelleneous"){
+    if(category_id == "miscelleneous" || category_id == "webdesign"){
       slides = this.state.works[category_id].portfolios.map( (work, index) =>
           <div className={ ((index) == 0) ? ("carousel-item active") : ("carousel-item")}>
             <Link className="" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + index}>
@@ -94,6 +105,8 @@ class Worklist extends React.Component {
     }
 
     return(
+      <>
+      <NavBar />
       <div className="container mt-3 mt-md-5">
  
         <nav aria-label="breadcrumb">
@@ -119,7 +132,8 @@ class Worklist extends React.Component {
         duration: 0.2
       }}
       >
-        <h2>{category.name}</h2>
+        <h2 className="h2 d-block d-lg-none font-weight-bold">{category.name}</h2>
+        <h2 className="display-4 d-none d-lg-block ">{category.name}</h2>
         <p>{category.description}</p>
         
       </motion.div>
@@ -178,7 +192,7 @@ class Worklist extends React.Component {
    
         </motion.div>
       </div>
-      
+      </>
     )
   }
 }

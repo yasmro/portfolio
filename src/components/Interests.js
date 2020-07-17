@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import { motion } from "framer-motion";
-
+import NavBar from './NavBar'
 import '../style.css';
 
 class Interests extends React.Component {
+  componentDidMount() {
+    var section = "Interests";
+    var title = " – Yasmro's Portfolio 2020"
+    document.title = section + title;
+  }
+
   render(){
     return(
+      <>
+      <NavBar />
       <motion.div
       animate={{
         y: 0,
@@ -41,6 +49,7 @@ class Interests extends React.Component {
         
       </div>
       </motion.div>
+      </>
       
       )
   }

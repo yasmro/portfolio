@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import {BrowserRouter, Switch, Route, Link, useLocation } from 'react-router-dom';
 
 class NavBar extends Component {
 
+
+
   render(){
+    
 
     // const menu = this.props.match.params.menu;
-    // var color = (menu == "") ? "bg-dark" : "bg-light";
-    var color = "bg-light";
+    // var color = (menu == "") ? "bg-dark" : "bg-light";{ location.href == "/" ? "d-none" : ""}
+  
     return(
       <div className="">
-        <nav className={ "navbar navbar-expand-lg navbar-light fixed-top pl-lg-5 " + color} id="navbar">
+        <nav className={ "navbar navbar-expand-lg navbar-light fixed-top pl-lg-5"} id="navbar">
           <Link className="navbar-brand" to={process.env.PUBLIC_URL + "/"}>
             <img src={require('../images/name.png')} className="aligncenter mr-2 navBarLogo" alt="shodo03"/>
           </Link>
@@ -22,7 +25,7 @@ class NavBar extends Component {
                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/"}>Home</Link></li>
                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/about"}>About</Link></li>
                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/works"}>Works</Link></li>
-                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/interests"}>Interests</Link></li>
+                {/* <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/interests"}>Interests</Link></li> */}
                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></li>
             </ul>
           </div>

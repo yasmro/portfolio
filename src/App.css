@@ -14,25 +14,92 @@
 } */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
-/* , 'Roboto' 'Roboto Condensed',  */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* , 'Roboto' 'Roboto Condensed', 'Lato', 'Montserrat',  */
 *{
-  font-family: 'Noto Serif JP', 'Roboto Condensed', kozuka-gothic-pr6n, neue-haas-grotesk-text, dnp-shuei-gothic-kin-std, europa, brix-slab,  sans-serif;
+  font-family: 'Source Serif Pro', 'Noto Serif JP', 'Inter', neue-haas-grotesk-text, fot-udkakugo-large-pr6n, 'Inter','Overpass',  'Roboto Condensed', kozuka-gothic-pr6n, neue-haas-grotesk-text, dnp-shuei-gothic-kin-std,  sans-serif;
   font-weight: 400;
   
 }
 
 h1{
-  font-family: adobe-handwriting-frank;
+  font-family: 'Karla', adobe-handwriting-frank,  'Inter';
+  font-style: italic;
+
 }
 
-h2, h3, h4, h5, h6, dt, span.a, .nav-link, .header, .counter{
-  font-family:  'Noto Serif JP', kozuka-gothic-pr6n, neue-haas-grotesk-display, brix-slab, fot-rodin-pron;
+/* .counter > div > span */
+h2, h3, h4, h5, h6, dt, span.a, span.badge, .nav-link, .header, .counter{
+  font-family: 'Karla', neue-haas-grotesk-text,  din-2014, 'Inter', fot-rodin-pron, fot-udkakugo-large-pr6n,  'Overpass', 'Noto Serif JP', 'Montserrat', 'Bitter', 'Karla', 'Noto Serif JP', kozuka-gothic-pr6n, neue-haas-grotesk-display, brix-slab, fot-rodin-pron;
+  font-style: italic;
 }
+
+h2, h3, h4, h5, h6{
+  letter-spacing: -0.5px;
+}
+
+h5 span.badge{
+  letter-spacing: 0;
+}
+
+#toplogo{
+  height:30vh;
+}
+
+#topmenu > div > a{
+  height: 50px;
+}
+
+#topmenu > div > a{
+  font-family:  'Karla', 'EB Garamond',a-otf-midashi-mi-ma31-pr6n, fot-matisse-pron;
+  font-style: italic;
+}
+
+#navbar{
+  background:rgba(255,255,255,0.6) !important;
+  backdrop-filter: blur(7px);
+  /* border-bottom: 1px solid rgba(200,200,200,0.7); */
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 10px 0 rgba(0,0,0,0.075)
+}
+
+
+/*effect-underline*/
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
 
 
 p, dd, li{
@@ -61,3 +128,20 @@ p, dd, li{
   background-color: #808080;
   opacity: 0.1;
 }
+
+.my-shuffle .shuffle-text-char {
+  animation: 0.01s ease-in-out both myWordEnter; /* none for no effect */
+}
+ 
+@keyframes myWordEnter {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.7);
+  }
+ 
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+

@@ -14,6 +14,12 @@ export var state = {
         imageUrl: "watchface"
       },
       {
+        id: "webdesign",
+        name: "Web Design",
+        description: "Design and develop Web pages/Web services with HTML, CSS, JavaScript(jQuery, ReactJS etc.)",
+        imageUrl: "mis"
+      },
+      {
         id: "miscelleneous",
         name: "Miscelleneous",
         description: "Others",
@@ -97,6 +103,14 @@ export var state = {
           images:[
             "test2"
           ]
+        },
+        {
+          id:13,
+          title:"Night Dew",
+          description: "hoge1",
+          images:[
+            "test2"
+          ]
         }
 
       ]
@@ -143,6 +157,84 @@ export var state = {
         id:5,
         title:"",
         description: "hoge1",
+        images:[
+          "test2"
+        ]
+      }
+
+      ]
+    },
+    webdesign: {
+      id: "webdesign",
+      name: "Web Design",
+      description: "Design and develop Web pages/Web services with HTML, CSS, JavaScript(jQuery, ReactJS etc.)",
+      imageUrl: "webdesign",
+      portfolios:[
+      {
+        id:1,
+        title:"Own Portfolio Sites",
+        key: "portfolio",
+        category: "Web Design",
+        abstract: "This site was developed for expression my work and making visitors more impressive. The front-end Javascript was written in ReactJS in order to output of learning ReactJS.",
+        description:[
+          {
+            type: "paragraph",
+            header: "Duration",
+            contents:"3 weeks"
+          },
+          {
+            type: "paragraph",
+            header: "Used Technologies",
+            contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS)"
+          }
+           
+        ],
+        images:[
+          "test2"
+        ]
+      },
+      {
+        id:2,
+        title:"Weather App",
+        key: "weather",
+        category: "Web Design",
+        abstract: "This site is the weather forcast information fetched from OpenWeatherMap. The front-end Javascript was written in ReactJS in order to output of learning ReactJS as well as the portfolio.",
+        description:[
+          {
+            type: "paragraph",
+            header: "Duration",
+            contents:"16 hours"
+          },
+          {
+            type: "paragraph",
+            header: "Used Technologies",
+            contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS), OpenWeatherMap API (to fetch weather information)"
+          }
+           
+        ],
+        images:[
+          "test2"
+        ]
+      },
+      {
+        id:3,
+        title:"Cocktail Database",
+        key: "cocktail",
+        category: "Web Design",
+        abstract: "This site provides the cocktail's information such as thumbnail, ingredients, instruction and so on. These information are fetched from CocktailDB API. The front-end Javascript was written in ReactJS in order to output of learning ReactJS.",
+        description:[
+          {
+            type: "paragraph",
+            header: "Duration",
+            contents:"12 hours"
+          },
+          {
+            type: "paragraph",
+            header: "Used Technologies",
+            contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS), CocktailDB API (to fetch weather information)"
+          }
+           
+        ],
         images:[
           "test2"
         ]
@@ -208,11 +300,12 @@ export var state = {
           },
           {
             type: "images",
-            header: "",
+            header: "System Design",
             images: [
-              "slide01.png",
-              "slide02.png",
-              "slide03.png"
+              "BD_English.001.png",
+              "BD_English.002.png",
+              "BD_English.003.png",
+              "BD_English.004.png"
             ]
           }
         ]
@@ -245,16 +338,36 @@ export var state = {
         id:4,
         key: "random_correction",
         category: "Research Project",
-        title:"Detection of Random Correnctions from Source Code Snapshots",
+        title:"Detection of Random Corrections from Source Code Snapshots",
         technologies: "Design, Develop and Maintain Web page with HTML, CSS and JavaScript",
-        abstract: "	Classifying student's situation helps improve educational effect in programming course with snapshots. Snapshots can grasp student who falls \"pitfall\" during a course. The purpose of this study is to classify students who make random correction in the programming course with Online Judge System. Random Correction is an action that source code correction without understanding the exercise contents. Then we propose metrics to classify students who make random corrections from snapshots of source code submitted by students and verify their usefulness. The result of the experiment shows that students who cannot reach perfect score had high value of both metrics; 1) a degree of imbalance corrections between source code lines, 2) the number of submitted revisions.",
+        abstract: "Classifying student's situation helps improve educational effect in programming course with snapshots. Snapshots can grasp student who falls \"pitfall\" during a course. The purpose of this study is to classify students who make random correction in the programming course with Online Judge System. Random Correction is an action that source code correction without understanding the exercise contents. Then we propose metrics to classify students who make random corrections from snapshots of source code submitted by students and verify their usefulness. The result of the experiment shows that students who cannot reach perfect score had high value of both metrics; 1) a degree of imbalance corrections between source code lines, 2) the number of submitted revisions.",
         description:[
-           
+          {
+            type: "paragraph",
+            header: "Project Duration",
+            contents:"2 years(April 2017 – March 2019)"
+          },
+          {
+            type: "paragraph",
+            header: "Used Technologies",
+            contents:"Collected student's activity data in programming lectures and calculated parameters (a degree of imbalance corrections between source code lines, and the number of submitted revisions) with Java, Shell Script. Also calculated the correlation and took Welch's t-test between the student's score and each parameters with R to evaluate the effectiveness of metrics."
+          },
+          {
+            type: "link",
+            header: "Papers",
+            links: [
+              {
+                name: "Detection of Random Corrections from Source Code Snapshots (2019 8th International Conference on Software and Computer Applications (ICSCA 2019), Malaysia)",
+                href: "https://uwanolab.jp/pman/data/pdf/156.pdf"
+              }
+            ]
+          }     
         ],
         images:[
           "test2"
         ]
-      },
+      }
+      // ,
       // {
       //   id:5,
       //   title:"Enmel",
@@ -269,20 +382,75 @@ export var state = {
       //     "test2"
       //   ]
       // },
-      {
-        id:6,
-        title:"Own Portfolio Sites",
-        key: "portfolio",
-        category: "Web Design",
-        technologies: "Design, Develop and Maintain Web page with HTML, CSS and JavaScript",
-        abstract: "Enmel is a Web system which manages and shares the recipes(e.g. ingredients, procedures preparation/finish, allergy etc.) for restaurant or pastry chef. In addition, applying recipe data expected business efficiency such as cost accounting, material management, customer management, their schedule management and so on.",
-        description:[
+      // {
+      //   id:6,
+      //   title:"Own Portfolio Sites",
+      //   key: "portfolio",
+      //   category: "Web Design",
+      //   abstract: "This site was developed for expression my work and making visitors more impressive. The front-end Javascript was written in ReactJS in order to output of learning ReactJS.",
+      //   description:[
+      //     {
+      //       type: "paragraph",
+      //       header: "Duration",
+      //       contents:"3 weeks"
+      //     },
+      //     {
+      //       type: "paragraph",
+      //       header: "Used Technologies",
+      //       contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS)"
+      //     }
            
-        ],
-        images:[
-          "test2"
-        ]
-      }
+      //   ],
+      //   images:[
+      //     "test2"
+      //   ]
+      // },
+      // {
+      //   id:7,
+      //   title:"Weather App",
+      //   key: "weather",
+      //   category: "Web Design",
+      //   abstract: "This site is the weather forcast information fetched from OpenWeatherMap. The front-end Javascript was written in ReactJS in order to output of learning ReactJS as well as the portfolio.",
+      //   description:[
+      //     {
+      //       type: "paragraph",
+      //       header: "Duration",
+      //       contents:"16 hours"
+      //     },
+      //     {
+      //       type: "paragraph",
+      //       header: "Used Technologies",
+      //       contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS), OpenWeatherMap API (to fetch weather information)"
+      //     }
+           
+      //   ],
+      //   images:[
+      //     "test2"
+      //   ]
+      // },
+      // {
+      //   id:8,
+      //   title:"Cocktail Database",
+      //   key: "cocktail",
+      //   category: "Web Design",
+      //   abstract: "This site provides the cocktail's information such as thumbnail, ingredients, instruction and so on. These information are fetched from CocktailDB API. The front-end Javascript was written in ReactJS in order to output of learning ReactJS.",
+      //   description:[
+      //     {
+      //       type: "paragraph",
+      //       header: "Duration",
+      //       contents:"12 hours"
+      //     },
+      //     {
+      //       type: "paragraph",
+      //       header: "Used Technologies",
+      //       contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS), CocktailDB API (to fetch weather information)"
+      //     }
+           
+      //   ],
+      //   images:[
+      //     "test2"
+      //   ]
+      // }
 
       ]
     }
