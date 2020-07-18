@@ -131,11 +131,13 @@ class Home extends Component {
             <h1>No2.</h1>
           </div>
           
-          <div className="pl-lg-5 container-fluid text-dark jumbotron jumbotron-fluid bg-white w-100 h-100 mb-0 text-center" style={{"padding-top": "25vh"}} id="no3">
-            <h1 className="display-4">For more detail...</h1>
-            <div className="pt-5 pb-4"><Link className="h3 mb-3" to={process.env.PUBLIC_URL + "/about"}>About</Link></div>
-            <div className="pt-5 pb-4"><Link className="h3 mb-3" to={process.env.PUBLIC_URL + "/works"}>Works</Link></div>
-            <div className="pt-5 pb-4"><Link className="h3 mb-3" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></div>
+          <div className="pl-lg-5 container-fluid text-dark jumbotron jumbotron-fluid bg-white w-100 h-100 mb-0 text-center" id="no3">
+            <div className="" style={{"padding-top": "min(calc(25vh - 8vh), 50px)"}}>
+              <h1 className="display-4">For more detail...</h1>
+              <div className="pt-5 pb-4"><Link className="h3 mb-3" to={process.env.PUBLIC_URL + "/about"}>About</Link></div>
+              <div className="pt-5 pb-4"><Link className="h3 mb-3" to={process.env.PUBLIC_URL + "/works"}>Works</Link></div>
+              <div className="pt-5 pb-4"><Link className="h3 mb-3" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></div>
+            </div>
           </div>
         </div>
 

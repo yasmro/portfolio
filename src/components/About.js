@@ -20,9 +20,10 @@ class About extends React.Component {
 
   renderskills(skills) {
     const s = skills.map( skill =>
-      <div className="mb-4">
+      // <div className="mb-4">
+      <div className="mb-2">
         <dt>{skill.name}</dt>
-        <dd>{skill.description}</dd>
+        {/* <dd>{skill.description}</dd> */}
       </div>    
     )
 

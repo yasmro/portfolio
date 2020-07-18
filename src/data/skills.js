@@ -9,11 +9,11 @@ export var state = {
             description: "National qualifications in Japan (Got it on 2015)"
           },
           {
-            name: "HTML5 / CSS3",
+            name: "HTML5 / CSS3 (Bootstrap)",
             description: "Bootstrap and Web design"
           },
           {
-            name: "JavaScript",
+            name: "JavaScript (jQuery, ReactJS, native)",
             description: "Available for jQuery and native. Also, I'm learning ReactJS now"
           },
           {
@@ -23,6 +23,10 @@ export var state = {
           {
             name: "C#, MySQL",
             description: "Basic Skill"
+          },
+          {
+            name: "Git / Subversion",
+            description: "Experienced with group development"
           }
         ]
         
@@ -32,15 +36,15 @@ export var state = {
         category: "Design",
         skills:[
           {
-            name: "Graphical Design",
-            description: "PowerPoint/Keynote slides, images and clockfaces on smartwatch"
+            name: "Graphical Design (for slides, images and watchfaces",
+            description: "PowerPoint/Keynote slides, images and watchfaces on smartwatch"
           },
           {
             name: "Web Design",
             description: "Available with HTML, CSS and JavaScript"
           },
           {
-            name: "Adobe Illustrator / Photoshop",
+            name: "Adobe Illustrator / Photoshop (Novice)",
             description: "Novice level"
           }
         ]
@@ -54,13 +58,14 @@ export var state = {
             description: "Experienced since 2009 and took 20+ awards on Japanese calligraphy concours before."
           },
           {
-            name: "Git / Subversion",
-            description: "Experienced with group development"
-          },
-          {
             name: "English",
             description: "TOEIC 675 (took on April 2018)"
+          },
+          {
+            name: "Mathematics",
+            description: ""
           }
+
         ]
       }
     ]
