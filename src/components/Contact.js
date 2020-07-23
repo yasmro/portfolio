@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { motion } from 'framer-motion';
 import NavBar from './NavBar'
+import Footer from './Footer'
 
 class Contact extends Component {
   componentDidMount() {
@@ -49,7 +50,7 @@ class Contact extends Component {
 
   render(){
     
-    const contacts = this.state.contacts.map( contact =>
+    const contacts_old = this.state.contacts.map( contact =>
       <a href={contact.href} className="contact-box nav-link col-md-5 mr-md-2 col-12 mb-2 bg-light text-dark" key={contact.id}>
         <div className="cover-img pt-2 pr-md-2" Style="background-image:url('../images/shodo/1.png');">
           <div className="mb-2">
@@ -59,6 +60,18 @@ class Contact extends Component {
           <p className="" style={{"font-style" : "normal"}}>{contact.url}</p>
         </div>
       </a>
+    )
+
+    const contacts = this.state.contacts.map( (contact, i) =>
+      <div className="cover-img col-lg-6 col-12 p-0 m-0 mb-2 pr-2" key={contact.id} Style="background-image:url('../images/shodo/1.png');">
+        <a className="nav-link w-100 bg-light text-dark" key={i} href={contact.href}>
+        <div className="mb-2">
+              <i className={contact.icon + " fa-2x"}></i>
+              <span className="header h3 position-absolute" Style="left: 56px;">{contact.name}</span>
+            </div>
+            <p className="" style={{"font-style" : "normal"}}>{contact.url}</p>
+        </a>
+      </div>
     )
 
     return(
@@ -112,6 +125,7 @@ class Contact extends Component {
       </motion.div>
          
       </div>
+      <Footer />
       </>
       
     )

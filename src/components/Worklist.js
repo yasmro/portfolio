@@ -5,6 +5,9 @@ import NavBar from './NavBar'
 import { motion } from "framer-motion";
 
 import { state as portfolios } from '../data/portfolios';
+import Footer from './Footer'
+
+import ShuffleText from 'react-shuffle-text';
 
 class Worklist extends React.Component {
 
@@ -57,15 +60,24 @@ class Worklist extends React.Component {
       modal = this.state.works[category_id].portfolios.map( (work,index) =>
         <div className="modal fade" id={category_id + work.id } tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered" role="document">
-            <div className="modal-content">
-
+            
+            <div className="modal-content bg-none border-none" Style="border: none !important; background-color: rgba(0,0,0,0) !important;">
               <div className="modal-body mb-0 p-0">
                 <div className="embed-responsive-16by9 z-depth-1-half">
                   <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt={category_id + "_" + work.id} className="aligncenter w-100"/>
                 </div>  
               </div>
-              <button type="button" className="btn btn-outline-light text-dark" data-dismiss="modal">Close</button>
+              {/* <button type="button" className="btn btn-outline-light text-dark" data-dismiss="modal">Close</button> */}
+            
+            <div className="pt-2" style={{"background": "rgba(255,255,255,0);"}}>
+                <h1 className="position-absolute display-1" style={{"bottom": "-6%", "left": "0%", "color": "rgba(255,255,255, 0.1)"}}>{('0' + (index+1).toString()).slice(-2)}</h1>
+                <h3 className="text-white">{work.title}</h3>
+                <span className="text-white h5">{work.jpname}</span>
             </div>
+              
+            </div>
+            
+            
           </div>
         </div>
 
@@ -85,6 +97,7 @@ class Worklist extends React.Component {
             <Link className="" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + index}>
               <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" className="d-block w-100"/>
               <div className="mt-3 text-dark text-center">
+                {/* <h1 className="position-absolute display-4 text-center" style={{"bottom": "-8%", "left": "42%", "color": "rgba(0,0,0, 0.1)"}}>{('0' + (index+1).toString()).slice(-2)}</h1> */}
                 <h6>{work.title}</h6>
               </div>
             </Link>
@@ -97,7 +110,9 @@ class Worklist extends React.Component {
         <div className={ ((index) == 0) ? ("carousel-item active") : ("carousel-item")}>
           <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt="test" className="d-block w-100"/>
           <div className="mt-3 text-dark text-center">
+            {/* <h1 className="position-absolute display-4 text-center" style={{"bottom": "-4%", "left": "42%", "color": "rgba(0,0,0, 0.1)"}}>{('0' + (index+1).toString()).slice(-2)}</h1> */}
             <h6>{work.title}</h6>
+            <span className="">{work.jpname}</span>
           </div>
         </div>
         
@@ -192,7 +207,9 @@ class Worklist extends React.Component {
    
         </motion.div>
       </div>
+      <Footer />
       </>
+
     )
   }
 }

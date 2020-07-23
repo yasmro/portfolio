@@ -35,6 +35,7 @@ export var state = {
          { id:1,
           title:"Minazuki",
           description: "",
+          jpname:"水無月",
           images:[
             "test1"
           ]
@@ -43,6 +44,7 @@ export var state = {
           id:2,
           title:"Momiji Moyu",
           description: "",
+          jpname:"紅葉燃ゆ",
           images:[
             "test2"
           ]
@@ -51,13 +53,15 @@ export var state = {
           id:3,
           title:"Silent",
           description: "hoge1",
+          jpname:"静",
           images:[
             "test2"
           ]
         },
         { id:4,
-          title:"Business Card",
+          title:"Business Card – Souten",
           description: "hoge1",
+          jpname:"名刺 – 雲外蒼天",
           images:[
             "test1"
           ]
@@ -67,6 +71,7 @@ export var state = {
         { id:7,
           title:"The Dusk",
           description: "hoge1",
+          jpname:"黄昏",
           images:[
             "test1"
           ]
@@ -76,6 +81,7 @@ export var state = {
           id:9,
           title:"Geishun 2020",
           description: "hoge1",
+          jpname:"迎春2020 – 子",
           images:[
             "test2"
           ]
@@ -84,6 +90,7 @@ export var state = {
           id:10,
           title:"Sakura Kakushi",
           description: "hoge1",
+          jpname:"さくらかくし",
           images:[
             "test2"
           ]
@@ -92,6 +99,7 @@ export var state = {
           id:11,
           title:"XYZ",
           description: "hoge1",
+          jpname:"XYZ – 至高の一杯に酔いしれたい",
           images:[
             "test2"
           ]
@@ -100,6 +108,7 @@ export var state = {
           id:12,
           title:"The smell in the beginning of rainy season",
           description: "hoge1",
+          jpname:"梅雨入りのにほひ",
           images:[
             "test2"
           ]
@@ -108,6 +117,7 @@ export var state = {
           id:13,
           title:"Night Dew",
           description: "hoge1",
+          jpname:"夜露に濡れて...",
           images:[
             "test2"
           ]
@@ -123,7 +133,8 @@ export var state = {
       portfolios:[
         {
           id:1,
-         title:"",
+         title:"　",
+         jpname:"　",
          description: "hoge1",
          images:[
            "test1"
@@ -131,7 +142,8 @@ export var state = {
        },
        {
          id:2,
-         title:"",
+         title:"　",
+         jpname:"　",
          description: "hoge1",
          images:[
            "test2"
@@ -139,7 +151,8 @@ export var state = {
        },
        {
         id:3,
-        title:"",
+        title:"　",
+         jpname:"　",
         description: "hoge1",
         images:[
           "test2"
@@ -147,7 +160,8 @@ export var state = {
       },
       {
         id:4,
-        title:"",
+        title:"　",
+         jpname:"　",
         description: "hoge1",
         images:[
           "test2"
@@ -155,7 +169,17 @@ export var state = {
       },
       {
         id:5,
-        title:"",
+        title:"　",
+         jpname:"　",
+        description: "hoge1",
+        images:[
+          "test2"
+        ]
+      },
+      {
+        id:6,
+        title:"　",
+         jpname:"　",
         description: "hoge1",
         images:[
           "test2"

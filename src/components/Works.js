@@ -7,6 +7,8 @@ import { state as portfolios } from '../data/portfolios';
 
 import { motion } from "framer-motion";
 
+import Footer from './Footer'
+
 const variants = {
   open: {
     transition: { staggerChildren: 0.07, delayChildren: 0.2 }
@@ -50,7 +52,7 @@ class Works extends Component {
 
 
   render(){
-    const categories = this.state.works.categories.map( (category, i) =>
+    const categories_old = this.state.works.categories.map( (category, i) =>
         <Link className="nav-link col-lg-5 mr-lg-2 col-12 mb-2 bg-light text-dark" key={i} to={process.env.PUBLIC_URL + "/works/" + category.id}>
           <div className="cover-img pt-2 pr-md-2 works-category-box" Style="background-image:url('../images/shodo/1.png');">
             <div className="about-text">
@@ -61,6 +63,19 @@ class Works extends Component {
         </Link>
 
     )
+
+    const categories = this.state.works.categories.map( (category, i) =>
+    <div className="cover-img col-lg-6 col-12 p-0 m-0 mb-2 pr-2" Style="background-image:url('../images/shodo/1.png');">
+      <Link className="nav-link w-100 bg-light text-dark works-category-box" key={i} to={process.env.PUBLIC_URL + "/works/" + category.id}>
+        <div className="about-text">
+          <h3>{category.name}</h3>
+          <p className="" style={{"font-style" : "normal"}}>{category.description}</p>
+        </div>
+      </Link>
+    </div>
+
+)
+
 
     return(
       <>
@@ -110,14 +125,11 @@ class Works extends Component {
             variants={variantsli}
         >
             {categories}
-        </motion.div>
-       
-          
-          
-            
+        </motion.div>            
         </div>
       </motion.div>
       </div>
+      <Footer />
       </>
     )
   }

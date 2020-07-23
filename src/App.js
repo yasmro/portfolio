@@ -40,8 +40,9 @@ function App() {
         {/* <NavBar /> */}
         <div className="" Style="padding-top: 56px;">
         <Route render={({ location }) => (
-          <AnimatePresence exitBeforeEnter>
+          
             <Switch>
+              <AnimatePresence exitBeforeEnter>
               <Route exact path={ process.env.PUBLIC_URL + '/'} component={Home} Style="padding-top: 56px;" />
               <Route exact path={ process.env.PUBLIC_URL + '/about'}  component={About} />
               <Route exact path={ process.env.PUBLIC_URL + '/works'}  component={Works}/>
@@ -49,9 +50,10 @@ function App() {
                 <Route exact path={ process.env.PUBLIC_URL + '/works/:category/:id'} component={WorkDetail}/>
                 {/* <Route exact path={ process.env.PUBLIC_URL + '/interests'}  component={Interests}/> */}
               <Route exact path={ process.env.PUBLIC_URL + '/contact'}  component={Contact}/>
+              </AnimatePresence>
               <Route component={NoMatch}/>
             </Switch>
-            </AnimatePresence>
+            
           )}/>
 
         </div>

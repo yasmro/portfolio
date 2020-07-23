@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { motion } from "framer-motion";
 import NavBar from './NavBar'
+import Footer from './Footer'
 import { state as skills } from '../data/skills'
 
 import '../style.css';
@@ -197,6 +198,7 @@ class About extends React.Component {
         </motion.div>
 
       </div>
+      <Footer />
       </>
       
       )

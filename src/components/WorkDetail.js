@@ -10,6 +10,8 @@ import ShuffleText from 'react-shuffle-text';
 import { state as portfolios } from '../data/portfolios';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import Footer from './Footer'
+
 import '../style.css';
 
 // var postVariants = {
@@ -37,6 +39,18 @@ import '../style.css';
 const postVariants = {
   initial: {x: 0, y: 0, scale: 1, opacity: 0, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] }},
   enter: {  x:0, y: 0, scale: 1, opacity: 1, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] } },
+  exit: {x: 0, y: 0, scale: 1, opacity: 0, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] }},
+};
+
+const postVariants2L = {
+  initial: {x: 20, y: 0, scale: 1, opacity: 0, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] }},
+  enter: {  x:0, y: 0, scale: 1, opacity: 1, transition: { duration: 1, ease: [0.48, 0.15, 0.25, 0.96], delay:0.75 } },
+  exit: {x: 0, y: 0, scale: 1, opacity: 0, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] }},
+};
+
+const postVariants2R = {
+  initial: {x: -20, y: 0, scale: 1, opacity: 0, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] }},
+  enter: {  x:0, y: 0, scale: 1, opacity: 1, transition: { duration: 1, ease: [0.48, 0.15, 0.25, 0.96], delay:0.75 } },
   exit: {x: 0, y: 0, scale: 1, opacity: 0, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] }},
 };
 
@@ -282,23 +296,20 @@ class WorkDetail extends React.Component {
           {/* </CSSTransition>
           </SwitchTransition> */}
 
-          <motion.div variants={postVariants} className="col-6 mb-5 mt-5 pt-3 pb-3 position-relative">
+          <motion.div variants={postVariants2L} className="col-6 mb-5 mt-5 pt-3 pb-3 position-relative">
            {/* <ScrollAnimation animateIn="fadeInLeft" animateOnce={false}> */}
               <Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + prev_id} className="text-dark w-100" onClick={window.scrollTo(0, 0)}>
-               
                 <div className="w-100">
                   <h1 className="position-absolute display-1 position-absolute" style={{"top": "-10%", "left": "3%", "color": "rgba(0,0,0, 0.1)"}}>{('0' + (prev_id + 1).toString()).slice(-2)}</h1>
                   <h2 className="h2 font-weight-bold counter d-none d-lg-block">&lt; PREV</h2>
                   <h2 className="h5 font-weight-bold counter d-block d-lg-none">&lt; PREV</h2>
                   <span className="h6 counter">{prev_name}</span>
                 </div>
-                
               </Link>
-            
             {/* </ScrollAnimation> */}
           </motion.div>
 
-          <motion.div variants={postVariants} className="col-6 text-right mb-5 mt-5 pt-3 pb-3 position-relative">
+          <motion.div variants={postVariants2R} className="col-6 text-right mb-5 mt-5 pt-3 pb-3 position-relative">
             <Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + next_id} className="text-dark w-100" onClick={ window.scrollTo(0, 0)}>
               <div className="w-100">
                 <h1 className="position-absolute display-1 position-absolute" style={{"top": "-10%","right": "3%", "color": "rgba(0,0,0, 0.1)"}}>{('0' + (next_id + 1).toString()).slice(-2)}</h1>
@@ -308,12 +319,12 @@ class WorkDetail extends React.Component {
               </div>
             </Link>
           </motion.div>
-          
         </motion.div>
         
         
         </AnimatePresence>
       </div>
+      <Footer />
       </>
       
       
