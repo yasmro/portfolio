@@ -213,7 +213,7 @@ p, dd, li{
 /* button */
 .button_container {
   position: fixed;
-  top: 5%;
+  top: 4%;
   right: 2%;
   height: 27px;
   width: 35px;
@@ -255,7 +255,7 @@ p, dd, li{
 }
 /* Open menu */
 .overlay {
-  z-index:1;
+  z-index: 20;
   position: fixed;
   background: rgb(52, 58, 64) ;
   backdrop-filter: blur(8px);

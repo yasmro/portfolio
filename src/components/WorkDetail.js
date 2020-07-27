@@ -200,7 +200,7 @@ class WorkDetail extends React.Component {
       <>
       <NavBar />
 
-        <div className="container mt-3 mt-md-5">
+        <div className="container mt-lg-5">
         <motion.div variants={postVariants} >
           <div className="container row mb-1 pl-0 pr-0">
             <nav aria-label="breadcrumb" className="col-9 col-md-8 col-lg-9">

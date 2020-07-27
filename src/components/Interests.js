@@ -31,7 +31,7 @@ class Interests extends React.Component {
         duration: 0.2
       }}
    >
-      <div className="container mt-5">
+      <div className="container mt-lg-5">
         <h1 className="mb-5 text-center text-md-left">Interests</h1>
         
         <div className="mb-5">

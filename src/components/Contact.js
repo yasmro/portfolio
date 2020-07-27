@@ -77,7 +77,7 @@ class Contact extends Component {
     return(
       <>
       <NavBar />
-      <div className="container mt-5">
+      <div className="container mt-lg-5">
         <motion.div
       animate={{
         y: 0,

@@ -59,7 +59,7 @@ class Home extends Component {
       <motion.div initial={{opacity:1}} animate={{opacity:1}} exit={{opacity: 0}} transition={{duration: 20,delay:0}} key="home" style={{"overflow-x": "hidden", "margin-top": "-56px"}}>
       <div className="bg-dark vh-100 vw-100" >
         <div className="container-fluid container-fluid jumbotron jumbotron-fluid text-white bg-dark w-100 h-100 mb-0" Style="min-height: 600px;">
-        <div className="pl-lg-5 " id="topmessage">
+        <div className="pl-lg-5 mt-5 mt-md-3" id="topmessage">
         <AnimatePresence exitBeforeEnter>
           <motion.div initial="initial" animate="enter" exit="exit" transition="transition" >
             
@@ -157,11 +157,12 @@ class Home extends Component {
         <div className="vh-100 d-none">
           <div className="pl-lg-5 container-fluid jumbotron jumbotron-fluid text-dark h-100 mb-0" id="no1" > 
             <div class="container-fluid">
-              <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
-                
-              </ScrollAnimation>
               <h1 className="display-3">What thing I can...</h1>
               <p>The customer</p>
+              <ScrollAnimation animateIn="fadeInLeft" animateOnce={false}>
+                <h1>Shodo</h1>
+              </ScrollAnimation>
+              
             </div>
 
           </div>
