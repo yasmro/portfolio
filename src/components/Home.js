@@ -35,9 +35,31 @@ class Home extends Component {
   render(){
     return(
       <AnimatePresence exitBeforeEnter>
-      <motion.div initial={{opacity:1}} animate={{opacity:1}} exit={{opacity: 0}} transition={{duration: 20,delay:0}} key="home">
-      <div className="bg-dark vh-100 vw-100" Style="margin-top:-56px; min-height: 600px;">
-        <div className="pl-lg-5 container-fluid container-fluid jumbotron jumbotron-fluid text-white bg-dark w-100 h-100 mb-0" id="topmessage">
+        <motion.div animate={{
+          y: 0,
+          opacity: 1
+        }}
+        initial={{
+          y: 20,
+          opacity: 0
+        }}
+        exit={{
+          y: -20,
+          opacity: 0
+        }}
+        transition={{
+          duration: 1,
+          delay:1
+        }} className="list-unstyled pl-0 position-absolute position-fixed" id="topmenu" style={{"top": "2.5%", "right": "0%"}}>
+              <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4 menu-btn" to={process.env.PUBLIC_URL + "/about"}>About</Link></div>
+              <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4 menu-btn" to={process.env.PUBLIC_URL + "/works"}>Works</Link></div>
+              <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4 menu-btn" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></div>
+            </motion.div>
+
+      <motion.div initial={{opacity:1}} animate={{opacity:1}} exit={{opacity: 0}} transition={{duration: 20,delay:0}} key="home" style={{"overflow-x": "hidden", "margin-top": "-56px"}}>
+      <div className="bg-dark vh-100 vw-100" >
+        <div className="container-fluid container-fluid jumbotron jumbotron-fluid text-white bg-dark w-100 h-100 mb-0" Style="min-height: 600px;">
+        <div className="pl-lg-5 " id="topmessage">
         <AnimatePresence exitBeforeEnter>
           <motion.div initial="initial" animate="enter" exit="exit" transition="transition" >
             
@@ -58,7 +80,8 @@ class Home extends Component {
           delay:0
         }}   className="align-middle text-center" key="home_content">
                 
-                <img src={require('../images/topName.svg')} className=" mt-5 mr-2 mb-5" style={{"min-height": "160px", "max-height": "260px"}} id="toplogo" alt=""/>
+                <img src={require('../images/topName.svg')} className=" mt-5 mr-2 mb-5 d-none d-md-inline-flex" style={{"min-height": "160px", "max-height": "260px"}} id="toplogo" alt=""/>
+                <img src={require('../images/topName.svg')} className=" mt-5 mr-2 mb-5 d-inline-flex d-md-none" style={{"min-height": "120px", "max-height": "160px"}} id="toplogo" alt=""/>
                 
               </motion.div>
 
@@ -88,7 +111,7 @@ class Home extends Component {
               </motion.div>
             
       
-            <div className="text-center">
+            {/* <div className="text-center">
             <motion.div animate={{
           y: 0,
           opacity: 1
@@ -105,29 +128,34 @@ class Home extends Component {
           duration: 1,
           delay:1
         }} className="list-unstyled pl-0 d-flex justify-content-center" id="topmenu">
-              <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4" to={process.env.PUBLIC_URL + "/about"}>About</Link></div>
-              <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4" to={process.env.PUBLIC_URL + "/works"}>Works</Link></div>
-              <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></div>
+              <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4 menu-btn" to={process.env.PUBLIC_URL + "/about"}>About</Link></div>
+              <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4 menu-btn" to={process.env.PUBLIC_URL + "/works"}>Works</Link></div>
+              <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4 menu-btn" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></div>
             </motion.div>
 
             
 
-            </div>
+            </div> */}
           </motion.div>
 
-          <div className="position-fixed" Style="margin: auto 0; left:0%;">
-            <P5Wrapper sketch={testSketch} />
-          </div>
+          
+
+
 
           
 
           
           </AnimatePresence>
           
+          </div>
+          <div className="overflow-hidden ml-0 pl-0" Style=" left:0%;">
+            <P5Wrapper sketch={testSketch} />
+          </div>
         </div>
+        
 
         <div className="vh-100 d-none">
-          <div className="pl-lg-5 container-fluid jumbotron jumbotron-fluid text-dark  w-100 h-100 mb-0" id="no1" Style="min-height: 600px;"> 
+          <div className="pl-lg-5 container-fluid jumbotron jumbotron-fluid text-dark h-100 mb-0" id="no1" > 
             <div class="container-fluid">
               <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
                 
@@ -141,14 +169,14 @@ class Home extends Component {
             <h1>No2.</h1>
           </div>
           
-          <div className="pl-lg-5 container-fluid text-dark jumbotron jumbotron-fluid bg-white w-100 h-100 mb-0 text-center" id="no3" Style="min-height: 600px;">
+          {/* <div className="pl-lg-5 container-fluid text-dark jumbotron jumbotron-fluid bg-white w-100 h-100 mb-0 text-center" id="no3" Style="min-height: 600px;">
             <div className="" style={{"padding-top": "min(calc(25vh - 8vh), 50px)"}}>
               <h1 className="display-4">For more detail...</h1>
-              <div className="pt-5 pb-4"><Link className="h3 mb-3" to={process.env.PUBLIC_URL + "/about"}>About</Link></div>
-              <div className="pt-5 pb-4"><Link className="h3 mb-3" to={process.env.PUBLIC_URL + "/works"}>Works</Link></div>
-              <div className="pt-5 pb-4"><Link className="h3 mb-3" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></div>
+              <div className="pt-5 pb-4"><Link className="h3 mb-3 menu-btn text-dark" to={process.env.PUBLIC_URL + "/about"}>About</Link></div>
+              <div className="pt-5 pb-4"><Link className="h3 mb-3 menu-btn text-dark" to={process.env.PUBLIC_URL + "/works"}>Works</Link></div>
+              <div className="pt-5 pb-4"><Link className="h3 mb-3 menu-btn text-dark" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         

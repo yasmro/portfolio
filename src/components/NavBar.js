@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Switch, Route, Link, useLocation } from 'react-router-dom';
 
+import P5Wrapper from 'react-p5-wrapper'
+import testSketch from './animation/testSketch'
+
 class NavBar extends Component {
 
 
@@ -55,7 +58,34 @@ class NavBar extends Component {
   
     return(
       <div className="">
+        <div className="d-none d-lg-inline">
         {nav}
+
+        </div>
+
+        <div className="d-lg-none d-inline">
+          <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
+
+
+          <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+              <ul>
+                <li className=""><Link className="" to={process.env.PUBLIC_URL + "/"}>Home</Link></li>
+                <li className=""><Link className="" to={process.env.PUBLIC_URL + "/about"}>About</Link></li>
+                <li className=""><Link className="" to={process.env.PUBLIC_URL + "/works"}>Works</Link></li>
+                {/* <li className=""><Link className="" to={process.env.PUBLIC_URL + "/interests"}>Interests</Link></li> */}
+                <li className=""><Link className="" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></li>
+              </ul>
+              <div className="overflow-hidden ml-0 pl-0" Style=" left:0%;">
+                <P5Wrapper sketch={testSketch} />
+              </div>
+            </nav>
+          </div>
+        </div>
       </div>
 
 

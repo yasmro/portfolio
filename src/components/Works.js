@@ -66,7 +66,7 @@ class Works extends Component {
 
     const categories = this.state.works.categories.map( (category, i) =>
     <div className="cover-img col-lg-6 col-12 p-0 m-0 mb-2 pr-2" Style="background-image:url('../images/shodo/1.png');">
-      <Link className="nav-link w-100 bg-light text-dark works-category-box" key={i} to={process.env.PUBLIC_URL + "/works/" + category.id}>
+      <Link className="nav-link w-100 bg-light text-dark works-category-box category-box hvr-ripple-out" key={i} to={process.env.PUBLIC_URL + "/works/" + category.id}>
         <div className="about-text">
           <h3>{category.name}</h3>
           <p className="" style={{"font-style" : "normal"}}>{category.description}</p>

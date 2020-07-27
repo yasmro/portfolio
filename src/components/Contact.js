@@ -64,7 +64,7 @@ class Contact extends Component {
 
     const contacts = this.state.contacts.map( (contact, i) =>
       <div className="cover-img col-lg-6 col-12 p-0 m-0 mb-2 pr-2" key={contact.id} Style="background-image:url('../images/shodo/1.png');">
-        <a className="nav-link w-100 bg-light text-dark" key={i} href={contact.href}>
+        <a className="nav-link w-100 bg-light text-dark category-box" key={i} href={contact.href}>
         <div className="mb-2">
               <i className={contact.icon + " fa-2x"}></i>
               <span className="header h3 position-absolute" Style="left: 56px;">{contact.name}</span>

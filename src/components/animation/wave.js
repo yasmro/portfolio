@@ -25,6 +25,7 @@ const testSketch = (p) => {
         p.calcWave();
         p.renderWave();
         p.renderWave2();
+        p.renderWave3();
     }
 
     p.calcWave = () => {
@@ -42,10 +43,10 @@ const testSketch = (p) => {
 
     p.renderWave = () => {
         p.noStroke();
-        p.fill(186);
+        p.fill(175);
         // A simple way to draw the wave with an ellipse at each location
         for (let x = 0; x < yvalues.length; x++) {
-          p.ellipse(x * xspacing, 200 / 4 + yvalues[x], 1, 1);
+          p.ellipse(x * xspacing, 200 / 4 + yvalues[x] * 0.8, 2,2);
         }
     }
 
@@ -55,9 +56,18 @@ const testSketch = (p) => {
         p.fill(213);
         // A simple way to draw the wave with an ellipse at each location
         for (let x = 0; x < yvalues.length; x++) {
-          p.ellipse(x * xspacing - 50, 200 / 4 + yvalues[x]*0.6, 2, 2);
+          p.ellipse(x * xspacing - 50 , 200 / 4 + yvalues[x] * 0.6, 2, 2);
         }
     }
+
+    p.renderWave3 = () => {
+      p.noStroke();
+      p.fill(231);
+      // A simple way to draw the wave with an ellipse at each location
+      for (let x = 0; x < yvalues.length; x++) {
+        p.ellipse(x * xspacing - 80, 200 / 4 + yvalues[x]*0.4, 2,2);
+      }
+  }
 
 }
 

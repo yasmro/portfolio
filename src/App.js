@@ -38,12 +38,13 @@ function App() {
     ReactDOM.render(
       <BrowserRouter>
         {/* <NavBar /> */}
+        {/* <div className="position-fixed w-100 h-100 " Style="z-index:1; background-color: rgba(255,255,255,0.5); backdrop-filter: blur(3.5px);"></div> */}
         <div className="" Style="padding-top: 56px;">
         <Route render={({ location }) => (
           
             <Switch>
               <AnimatePresence exitBeforeEnter>
-              <Route exact path={ process.env.PUBLIC_URL + '/'} component={Home} Style="padding-top: 56px;" />
+              <Route exact path={ process.env.PUBLIC_URL + '/'} component={Home} />
               <Route exact path={ process.env.PUBLIC_URL + '/about'}  component={About} />
               <Route exact path={ process.env.PUBLIC_URL + '/works'}  component={Works}/>
                 <Route exact path={ process.env.PUBLIC_URL + '/works/:category'} component={Worklist}/>
