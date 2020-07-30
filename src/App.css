@@ -47,6 +47,7 @@ h1{
 h2, h3, h4, h5, h6, dt, span.a, span.badge, .nav-link, .header, .counter{
   font-family: 'Karla', neue-haas-grotesk-text,  din-2014, 'Inter', fot-rodin-pron, fot-udkakugo-large-pr6n,  'Overpass', 'Noto Serif JP', 'Montserrat', 'Bitter', 'Karla', 'Noto Serif JP', kozuka-gothic-pr6n, neue-haas-grotesk-display, brix-slab, fot-rodin-pron;
   font-style: italic;
+  /* font-weight:700; futura-pt,  */
 }
 
 h2, h3, h4, h5, h6{

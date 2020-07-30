@@ -13,16 +13,16 @@ export var state = {
         description: "Design and Develop with XML, CSS and JavaScript on Fitbit Ionic",
         imageUrl: "watchface"
       },
-      // {
-      //   id: "webdesign",
-      //   name: "Web Design",
-      //   description: "Design and develop Web pages/Web services with HTML, CSS, JavaScript(jQuery, ReactJS etc.)",
-      //   imageUrl: "mis"
-      // },
+      {
+        id: "webdesign",
+        name: "Web Design",
+        description: "Design and develop Web pages/Web services with HTML, CSS, JavaScript(jQuery, ReactJS etc.)",
+        imageUrl: "mis"
+      },
       {
         id: "miscelleneous",
         name: "Miscelleneous",
-        description: "Others",
+        description: "Hardware system, Mobile apps, Research Projects, and so on.",
         imageUrl: "mis"
       }
     ],
@@ -233,6 +233,16 @@ export var state = {
             type: "paragraph",
             header: "Used Technologies",
             contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS), OpenWeatherMap API (to fetch weather information)"
+          },
+          {
+            type: "link",
+            header: "",
+            links: [
+              {
+                name: "Visit Website",
+                href: "https://yasmro.github.io/weatherappreact/"
+              }
+            ]
           }
            
         ],
@@ -256,6 +266,16 @@ export var state = {
             type: "paragraph",
             header: "Used Technologies",
             contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS), CocktailDB API (to fetch weather information)"
+          },
+          {
+            type: "link",
+            header: "",
+            links: [
+              {
+                name: "Visit Website",
+                href: "https://yasmro.github.io/cocktailappreact/"
+              }
+            ]
           }
            
         ],
@@ -269,7 +289,7 @@ export var state = {
     miscelleneous: {
       id: "miscelleneous",
       name: "Miscelleneous",
-      description: "Others",
+      description: "Hardware system, Mobile apps, Research Projects, and so on.",
       imageUrl: "mis",
       portfolios:[
   
@@ -406,76 +426,96 @@ export var state = {
       //     "test2"
       //   ]
       // }
-      ,
-      {
-        id:6,
-        title:"Own Portfolio Sites",
-        key: "portfolio",
-        category: "Web Design",
-        abstract: "This site was developed for expression my work and making visitors more impressive. The front-end Javascript was written in ReactJS in order to output of learning ReactJS.",
-        description:[
-          {
-            type: "paragraph",
-            header: "Duration",
-            contents:"3 weeks"
-          },
-          {
-            type: "paragraph",
-            header: "Used Technologies",
-            contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS)"
-          }
+      // ,
+      // {
+      //   id:6,
+      //   title:"Own Portfolio Sites",
+      //   key: "portfolio",
+      //   category: "Web Design",
+      //   abstract: "This site was developed for expression my work and making visitors more impressive. The front-end Javascript was written in ReactJS in order to output of learning ReactJS.",
+      //   description:[
+      //     {
+      //       type: "paragraph",
+      //       header: "Duration",
+      //       contents:"3 weeks"
+      //     },
+      //     {
+      //       type: "paragraph",
+      //       header: "Used Technologies",
+      //       contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS)"
+      //     }
            
-        ],
-        images:[
-          "test2"
-        ]
-      },
-      {
-        id:7,
-        title:"Weather App",
-        key: "weather",
-        category: "Web Design",
-        abstract: "This site is the weather forcast information fetched from OpenWeatherMap. The front-end Javascript was written in ReactJS in order to output of learning ReactJS as well as the portfolio.",
-        description:[
-          {
-            type: "paragraph",
-            header: "Duration",
-            contents:"16 hours"
-          },
-          {
-            type: "paragraph",
-            header: "Used Technologies",
-            contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS), OpenWeatherMap API (to fetch weather information)"
-          }
+      //   ],
+      //   images:[
+      //     "test2"
+      //   ]
+      // },
+      // {
+      //   id:7,
+      //   title:"Weather App",
+      //   key: "weather",
+      //   category: "Web Design",
+      //   abstract: "This site is the weather forcast information fetched from OpenWeatherMap. The front-end Javascript was written in ReactJS in order to output of learning ReactJS as well as the portfolio.",
+      //   description:[
+      //     {
+      //       type: "paragraph",
+      //       header: "Duration",
+      //       contents:"16 hours"
+      //     },
+      //     {
+      //       type: "paragraph",
+      //       header: "Used Technologies",
+      //       contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS), OpenWeatherMap API (to fetch weather information)"
+      //     },
+      //     {
+      //       type: "link",
+      //       header: "",
+      //       links: [
+      //         {
+      //           name: "Visit Website",
+      //           href: "https://yasmro.github.io/weatherappreact/"
+      //         }
+      //       ]
+      //     }
            
-        ],
-        images:[
-          "test2"
-        ]
-      },
-      {
-        id:8,
-        title:"Cocktail Database",
-        key: "cocktail",
-        category: "Web Design",
-        abstract: "This site provides the cocktail's information such as thumbnail, ingredients, instruction and so on. These information are fetched from CocktailDB API. The front-end Javascript was written in ReactJS in order to output of learning ReactJS.",
-        description:[
-          {
-            type: "paragraph",
-            header: "Duration",
-            contents:"12 hours"
-          },
-          {
-            type: "paragraph",
-            header: "Used Technologies",
-            contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS), CocktailDB API (to fetch weather information)"
-          }
+      //   ],
+      //   images:[
+      //     "test2"
+      //   ]
+      // },
+      // {
+      //   id:8,
+      //   title:"Cocktail Database",
+      //   key: "cocktail",
+      //   category: "Web Design",
+      //   abstract: "This site provides the cocktail's information such as thumbnail, ingredients, instruction and so on. These information are fetched from CocktailDB API. The front-end Javascript was written in ReactJS in order to output of learning ReactJS.",
+      //   description:[
+      //     {
+      //       type: "paragraph",
+      //       header: "Duration",
+      //       contents:"12 hours"
+      //     },
+      //     {
+      //       type: "paragraph",
+      //       header: "Used Technologies",
+      //       contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS), CocktailDB API (to fetch weather information)"
+      //     },
+      //     {
+      //       type: "link",
+      //       header: "",
+      //       links: [
+      //         {
+      //           name: "Visit Website",
+      //           href: "https://yasmro.github.io/cocktailappreact/"
+      //         }
+      //       ]
+      //     }
            
-        ],
-        images:[
-          "test2"
-        ]
-      }
+      //   ],
+      //   images:[
+      //     "test2"
+      //   ]
+      // }
 
       ]
     }

@@ -50,7 +50,7 @@ class Home extends Component {
         transition={{
           duration: 1,
           delay:1
-        }} className="list-unstyled pl-0 position-absolute position-fixed" id="topmenu" style={{"top": "2.5%", "right": "0%"}}>
+        }} className="list-unstyled pl-0 position-absolute position-fixed d-md-none d-inline" id="topmenu" style={{"top": "2.5%", "right": "0%"}}>
               <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4 menu-btn" to={process.env.PUBLIC_URL + "/about"}>About</Link></div>
               <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4 menu-btn" to={process.env.PUBLIC_URL + "/works"}>Works</Link></div>
               <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4 menu-btn" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></div>
@@ -111,7 +111,7 @@ class Home extends Component {
               </motion.div>
             
       
-            {/* <div className="text-center">
+            <div className="text-center">
             <motion.div animate={{
           y: 0,
           opacity: 1
@@ -127,7 +127,7 @@ class Home extends Component {
         transition={{
           duration: 1,
           delay:1
-        }} className="list-unstyled pl-0 d-flex justify-content-center" id="topmenu">
+        }} className="list-unstyled pl-0 d-none d-md-flex justify-content-center" id="topmenu">
               <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4 menu-btn" to={process.env.PUBLIC_URL + "/about"}>About</Link></div>
               <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4 menu-btn" to={process.env.PUBLIC_URL + "/works"}>Works</Link></div>
               <div className="pt-2 pb-2"><Link className="h4 text-white mb-3 px-4 menu-btn" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></div>
@@ -135,7 +135,7 @@ class Home extends Component {
 
             
 
-            </div> */}
+            </div>
           </motion.div>
 
           
