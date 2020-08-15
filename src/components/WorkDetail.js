@@ -296,7 +296,7 @@ class WorkDetail extends React.Component {
           {/* </CSSTransition>
           </SwitchTransition> */}
 
-          <motion.div variants={postVariants2L} className="col-6 mb-5 mt-5 pt-3 pb-3 position-relative">
+          <motion.div variants={postVariants2L} className="col-6 mb-5 mt-5 pt-3 pb-3 position-relative" id="prevButton">
            {/* <ScrollAnimation animateIn="fadeInLeft" animateOnce={false}> */}
               <Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + prev_id} className="text-dark w-100" onClick={window.scrollTo(0, 0)}>
                 <div className="w-100">
@@ -309,7 +309,7 @@ class WorkDetail extends React.Component {
             {/* </ScrollAnimation> */}
           </motion.div>
 
-          <motion.div variants={postVariants2R} className="col-6 text-right mb-5 mt-5 pt-3 pb-3 position-relative">
+          <motion.div variants={postVariants2R} className="col-6 text-right mb-5 mt-5 pt-3 pb-3 position-relative" id="nextButton">
             <Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + next_id} className="text-dark w-100" onClick={ window.scrollTo(0, 0)}>
               <div className="w-100">
                 <h1 className="position-absolute display-1 position-absolute" style={{"top": "-10%","right": "3%", "color": "rgba(0,0,0, 0.1)"}}>{('0' + (next_id + 1).toString()).slice(-2)}</h1>

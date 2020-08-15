@@ -32,9 +32,9 @@ class Worklist extends React.Component {
     var works;
     if(category_id == "miscelleneous" || category_id == "webdesign"){
       works = this.state.works[category_id].portfolios.map( (work,index) =>
-        <Link className="nav-link col-lg-4 col-md-6 col-12 text-dark" to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + index}>
-          <div className="cover-img pb-3 thumbnail">
-            <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt={category_id + "_" + work.id} className = "bwWrapper pb-1 w-100"/>
+        <Link className="nav-link col-lg-4 col-md-6 col-12 text-dark"  to={process.env.PUBLIC_URL + "/works/" + category_id + "/" + index} Style="align-items: left; ">
+          <div className="cover-img pb-3">
+            <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt={category_id + "_" + work.id} className = "bwWrapper pb-1 w-100" Style="height: 200px; object-fit: contain;"/>
             <div className="about-text">
               <h5>{work.title}</h5>
             </div>
@@ -44,9 +44,9 @@ class Worklist extends React.Component {
       )
     }else{
       works = this.state.works[category_id].portfolios.map( (work,index) =>
-        <div className="nav-link col-lg-4 col-md-6 col-12 text-dark" >
+        <div className="nav-link col-lg-4 col-md-6 col-12 text-dark" Style="align-item: left; ">
           <div className="cover-img pb-3 thumbnail">
-            <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt={category_id + "_" + work.id} data-toggle="modal" data-target= { "#" + category_id + work.id } className = "bwWrapper pb-1 w-100"/>
+            <img src={require('../images/' + category_id + '/' + work.id +'.png')} alt={category_id + "_" + work.id} data-toggle="modal" data-target= { "#" + category_id + work.id } className = "bwWrapper pb-1 w-100" Style="object-fit: contain;"/>
             <div className="about-text">
               <h5>{work.title}</h5>
             </div>
@@ -208,9 +208,10 @@ class Worklist extends React.Component {
         </motion.div>
       </div>
       <Footer />
+      
       </>
-
     )
   }
 }
 export default Worklist;
+

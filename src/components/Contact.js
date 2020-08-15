@@ -43,6 +43,13 @@ class Contact extends Component {
           icon:"fab fa-instagram",
           url: "yasmro1226",
           href: "https://www.instagram.com/yasmro1226"
+        },
+        {
+          id: "linkedin",
+          name: "LinkedIn",
+          icon:"fab fa-linkedin",
+          url: "yu-ohno-7b7718102",
+          href: "www.linkedin.com/in/yu-ohno-7b7718102"
         }
       ]
     };

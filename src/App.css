@@ -18,17 +18,17 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 
 /* , 'Roboto' 'Roboto Condensed', 'Lato', 'Montserrat',  */
 *{
@@ -130,6 +130,7 @@ a.category-box {
   background-size: 200% auto;
   box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
   transition: .3s;
+  margin-bottom: 12px;
 }
 a.category-box:hover{
   background-color: rgb(52, 58, 64)!important;
@@ -210,6 +211,13 @@ p, dd, li{
     transform: translate(0, 0) scale(1);
   }
 }
+
+
+/* div#prevButton :hover{
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 10px 0 rgba(0,0,0,0.075);
+  
+  transition: .3s;
+} */
 
 /* button */
 .button_container {
