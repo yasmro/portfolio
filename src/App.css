@@ -17,18 +17,18 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap'); */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sans:wght@300;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 
 /* , 'Roboto' 'Roboto Condensed', 'Lato', 'Montserrat', classico-urw, 'Noto Serif JP', 'Inter', neue-haas-grotesk-text, fot-udkakugo-large-pr6n, 'Inter','Overpass',  'Roboto Condensed', kozuka-gothic-pr6n, neue-haas-grotesk-text, dnp-shuei-gothic-kin-std,   */
@@ -145,8 +145,14 @@ p, dd, li{
 
 @media only screen and (max-width: 576px) {
   p, dd, li, span{
-    /* font-size: 0.9rem; */
-    text-align: start;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .overlay nav a {
+
+    font-size: 40px;
+
   }
 
 }
