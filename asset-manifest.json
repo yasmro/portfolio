@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e76fe2c7.chunk.css",
-    "main.js": "/portfolio/static/js/main.cd3a929a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.cd3a929a.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.7147aabe.chunk.css",
+    "main.js": "/portfolio/static/js/main.cbdb9bcd.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.cbdb9bcd.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.ada8174c.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.ada8174c.js.map",
-    "static/js/2.47a67c74.chunk.js": "/portfolio/static/js/2.47a67c74.chunk.js",
-    "static/js/2.47a67c74.chunk.js.map": "/portfolio/static/js/2.47a67c74.chunk.js.map",
+    "static/js/2.7f1354bb.chunk.js": "/portfolio/static/js/2.7f1354bb.chunk.js",
+    "static/js/2.7f1354bb.chunk.js.map": "/portfolio/static/js/2.7f1354bb.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.a817d52ad22e55be9a70dce1382a4ea8.js": "/portfolio/precache-manifest.a817d52ad22e55be9a70dce1382a4ea8.js",
+    "precache-manifest.d2bf71e43e6eb7716326c068c9918c22.js": "/portfolio/precache-manifest.d2bf71e43e6eb7716326c068c9918c22.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.e76fe2c7.chunk.css.map": "/portfolio/static/css/main.e76fe2c7.chunk.css.map",
-    "static/js/2.47a67c74.chunk.js.LICENSE.txt": "/portfolio/static/js/2.47a67c74.chunk.js.LICENSE.txt",
+    "static/css/main.7147aabe.chunk.css.map": "/portfolio/static/css/main.7147aabe.chunk.css.map",
+    "static/js/2.7f1354bb.chunk.js.LICENSE.txt": "/portfolio/static/js/2.7f1354bb.chunk.js.LICENSE.txt",
     "static/media/0.jpg": "/portfolio/static/media/0.7a543767.jpg",
     "static/media/1.png": "/portfolio/static/media/1.e7988f62.png",
     "static/media/11.png": "/portfolio/static/media/11.6d589b07.png",
@@ -32,6 +32,7 @@
     "static/media/Barrier1.png": "/portfolio/static/media/Barrier1.77145a58.png",
     "static/media/BusinessCard.svg": "/portfolio/static/media/BusinessCard.e67e2f25.svg",
     "static/media/HowToDesignPresentationV1_0.pdf": "/portfolio/static/media/HowToDesignPresentationV1_0.c8932a78.pdf",
+    "static/media/R84086901.pdf": "/portfolio/static/media/R84086901.6a537f77.pdf",
     "static/media/SAS.jpeg": "/portfolio/static/media/SAS.c086b682.jpeg",
     "static/media/UnderPreparation.jpeg": "/portfolio/static/media/UnderPreparation.fb2396cf.jpeg",
     "static/media/a.png": "/portfolio/static/media/a.b237d9a6.png",
@@ -46,8 +47,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ada8174c.js",
-    "static/js/2.47a67c74.chunk.js",
-    "static/css/main.e76fe2c7.chunk.css",
-    "static/js/main.cd3a929a.chunk.js"
+    "static/js/2.7f1354bb.chunk.js",
+    "static/css/main.7147aabe.chunk.css",
+    "static/js/main.cbdb9bcd.chunk.js"
   ]
 }
