@@ -49,7 +49,7 @@ class Contact extends Component {
           name: "LinkedIn",
           icon:"fab fa-linkedin",
           url: "yu-ohno-7b7718102",
-          href: "www.linkedin.com/in/yu-ohno-7b7718102"
+          href: "https://www.linkedin.com/in/yu-ohno-7b7718102"
         }
       ]
     };
