@@ -105,7 +105,7 @@ class Home extends Component {
                 {/* <h1 className="h2 counter">Move Emotion</h1> */}
                 <h2 className="h2 counter">Yu Ohno's site</h2>
                 
-                <span className="text-white w-50 text-center">Hi, I'm Yu Ohno from Japan and engineer, calligrapher artist and designer. </span>
+                <span className="text-white w-50 text-center">Hi, I'm Yu from Japan and work as engineer, calligrapher artist. </span>
                 
 
               </motion.div>

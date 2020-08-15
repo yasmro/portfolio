@@ -18,34 +18,29 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap'); */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;700&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sans:wght@300;600&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 
-/* , 'Roboto' 'Roboto Condensed', 'Lato', 'Montserrat',  */
+/* , 'Roboto' 'Roboto Condensed', 'Lato', 'Montserrat', classico-urw, 'Noto Serif JP', 'Inter', neue-haas-grotesk-text, fot-udkakugo-large-pr6n, 'Inter','Overpass',  'Roboto Condensed', kozuka-gothic-pr6n, neue-haas-grotesk-text, dnp-shuei-gothic-kin-std,   */
 *{
-  font-family: classico-urw, 'Source Serif Pro', 'Noto Serif JP', 'Inter', neue-haas-grotesk-text, fot-udkakugo-large-pr6n, 'Inter','Overpass',  'Roboto Condensed', kozuka-gothic-pr6n, neue-haas-grotesk-text, dnp-shuei-gothic-kin-std,  sans-serif;
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
   font-weight: 400;
   
 }
 
-h1{
-  font-family: 'Karla', adobe-handwriting-frank,  'Inter';
-  font-style: italic;
-
-}
-
-/* .counter > div > span */
-h2, h3, h4, h5, h6, dt, span.a, span.badge, .nav-link, .header, .counter{
-  font-family: 'Karla', neue-haas-grotesk-text,  din-2014, 'Inter', fot-rodin-pron, fot-udkakugo-large-pr6n,  'Overpass', 'Noto Serif JP', 'Montserrat', 'Bitter', 'Karla', 'Noto Serif JP', kozuka-gothic-pr6n, neue-haas-grotesk-display, brix-slab, fot-rodin-pron;
+/* neue-haas-grotesk-text,  din-2014, 'Inter', fot-rodin-pron, fot-udkakugo-large-pr6n,  'Overpass', 'Noto Serif JP', 'Montserrat', 'Bitter', 'Karla', 'Noto Serif JP', kozuka-gothic-pr6n, neue-haas-grotesk-display, brix-slab, fot-rodin-pron */
+h1, h2, h3, h4, h5, h6, dt, span.a, span.badge, .nav-link, .header, .counter, #topmenu > div > a{
+  font-family: 'Karla';
   font-style: italic;
   /* font-weight:700; futura-pt,  */
 }
@@ -72,10 +67,6 @@ h5 span.badge{
   height: 50px;
 }
 
-#topmenu > div > a{
-  font-family:  'Karla', 'EB Garamond',a-otf-midashi-mi-ma31-pr6n, fot-matisse-pron;
-  font-style: italic;
-}
 
 #navbar{
   background:rgba(255,255,255,0.6) !important;

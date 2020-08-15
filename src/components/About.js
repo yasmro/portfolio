@@ -87,16 +87,19 @@ class About extends React.Component {
    >
         <div className="mt-5">
           <h2>Intro.</h2>
-          <ul>
+          {/* <ul>
               <li>Name: Yu Ohno（大野 優）</li>
               <li>Birthday: December 26, 1996</li>
               <li>Blood Type: AB</li>
-          </ul>
+          </ul> */}
+          <p>My name is Yu Ohno born in Nara, Japan, on 1996.</p>
+          <p>I've learned Information Technology in National Information Technology, Nara College, Japan for seven years(2012 – 2019) and joined Zoho Japan corp in April 2019. I'm taking care of supporting queries from Japanese customers, developers, and reseller partners. I support in the range of ten products:  Zoho CRM (Customer Relationship Management), Zoho Campaign (which provides email marketing application), Zoho SalesIQ (which has Web visitors' tracking, live chat, and chatbot platform on the Web page), Zoho Deluge (which we can develop Zoho services' customization with low-code programming language) and API integrations.</p>
+          <p>My hobby is art calligraphy and Web development. I post works of art calligraphy and Web pages to Instagram. I would like to work as an art calligrapher and/or a Web developer, and I hope to make audiences impressive :) </p>
         </div>
       </motion.div>
 
 
-        <div className="mt-5">
+        {/* <div className="mt-5">
         <motion.div
         animate={{
           y: 0,
@@ -168,7 +171,7 @@ class About extends React.Component {
               <p>Dept. Information Engineering / Associate Degree</p>
             </div>
             </motion.div>
-        </div> 
+        </div>  */}
 
         <motion.div
       animate={{
