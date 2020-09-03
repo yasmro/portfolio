@@ -121,6 +121,15 @@ export var state = {
           images:[
             "test2"
           ]
+        },
+        {
+          id:14,
+          title:"Beauty II",
+          description: "hoge1",
+          jpname:"美 II",
+          images:[
+            "test2"
+          ]
         }
 
       ]
