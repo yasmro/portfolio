@@ -40,6 +40,10 @@ div.container, div.header, div.footer{
   background: rgba(0,0,0,0);
 }
 
+.breadcrumb{
+  background:rgba(0,0,0,0);
+}
+
 *{
   font-family: 'Noto Serif JP', neue-haas-grotesk-text, 'Noto Sans JP', sans-serif;
   /* font-weight: 400; */
