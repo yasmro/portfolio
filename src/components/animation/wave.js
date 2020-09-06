@@ -21,7 +21,7 @@ const testSketch = (p) => {
   
     //毎フレームごとの描画内容
     p.draw = () => {
-        p.background(255)
+        p.background(251,254,255)
         p.calcWave();
         p.renderWave();
         p.renderWave2();

@@ -39,7 +39,7 @@ function App() {
       <BrowserRouter>
         {/* <NavBar /> */}
         {/* <div className="position-fixed w-100 h-100 " Style="z-index:1; background-color: rgba(255,255,255,0.5); backdrop-filter: blur(3.5px);"></div> */}
-        <div className="" Style="padding-top: 56px;">
+        <div className="page" Style="padding-top: 56px;">
         <Route render={({ location }) => (
           
             <Switch>
