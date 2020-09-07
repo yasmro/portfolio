@@ -406,8 +406,9 @@ export var state = {
             contents:"Collected student's activity data in programming lectures and calculated parameters (a degree of imbalance corrections between source code lines, and the number of submitted revisions) with Java, Shell Script. Also calculated the correlation and took Welch's t-test between the student's score and each parameters with R to evaluate the effectiveness of metrics."
           },
           {
-            type: "link",
+            type: "paragraph",
             header: "Papers",
+            contents:"Detection of Random Corrections from Source Code Snapshots (2019 8th International Conference on Software and Computer Applications (ICSCA 2019), Malaysia)",
             links: [
               {
                 name: "Detection of Random Corrections from Source Code Snapshots (2019 8th International Conference on Software and Computer Applications (ICSCA 2019), Malaysia)",
