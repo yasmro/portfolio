@@ -15,7 +15,7 @@ class NavBar extends Component {
     return(
       <motion.div className="mt-3 ">
         <div className="overflow-hidden" Style="left:0;">
-            <P5Wrapper sketch={testSketch} />
+            {/* <P5Wrapper sketch={testSketch} /> */}
             <div className="mt-2  mb-5 ml-2 align-center " Style="margin-bottom: 0px;">
             <p className="text-center counter">Copyright © {new Date().getFullYear().toString()} Yu Ohno "Yasumaro" All rights reserved.</p>
             </div> 

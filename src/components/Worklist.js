@@ -125,7 +125,7 @@ class Worklist extends React.Component {
       <div className="container mt-lg-5">
  
         <nav aria-label="breadcrumb">
-          <ol className="breadcrumb bg-white pl-0">
+          <ol className="breadcrumb bg-none pl-0">
             <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/"}>Works</Link></li>
             <li className="breadcrumb-item active d-md-inline d-none" aria-current="page">{category.name}</li>
           </ol>

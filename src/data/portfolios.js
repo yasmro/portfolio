@@ -207,7 +207,7 @@ export var state = {
         id:1,
         title:"Own Portfolio Sites",
         key: "portfolio",
-        category: "",
+        category: "Frontend",
         abstract: "This site was developed for expression my work and making visitors more impressive. The front-end Javascript was written in ReactJS in order to output of learning ReactJS.",
         description:[
           {
@@ -230,7 +230,7 @@ export var state = {
         id:2,
         title:"Weather App",
         key: "weather",
-        category: "",
+        category: "Frontend",
         abstract: "This site is the weather forcast information fetched from OpenWeatherMap. The front-end Javascript was written in ReactJS in order to output of learning ReactJS as well as the portfolio.",
         description:[
           {
@@ -263,7 +263,7 @@ export var state = {
         id:3,
         title:"Cocktail Database",
         key: "cocktail",
-        category: "",
+        category: "Frontend",
         abstract: "This site provides the cocktail's information such as thumbnail, ingredients, instruction and so on. These information are fetched from CocktailDB API. The front-end Javascript was written in ReactJS in order to output of learning ReactJS.",
         description:[
           {

@@ -204,7 +204,7 @@ class WorkDetail extends React.Component {
         <motion.div variants={postVariants} >
           <div className="container row mb-1 pl-0 pr-0">
             <nav aria-label="breadcrumb" className="col-9 col-md-8 col-lg-9">
-              <ol className="breadcrumb bg-white pl-0">
+              <ol className="breadcrumb bg-none pl-0">
                 <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/"}>Works</Link></li>
                 <li className="breadcrumb-item"><Link to={process.env.PUBLIC_URL + "/works/" + category_id + "/"}>{category.name}</Link></li>
                 <li className="breadcrumb-item active d-md-inline d-none" aria-current="page">{work.title}</li>
