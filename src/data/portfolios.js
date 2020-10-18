@@ -291,6 +291,29 @@ export var state = {
         images:[
           "test2"
         ]
+      },
+    {
+        id:4,
+        title:"Household Expenses",
+        key: "household",
+        category: "Frontend / Backend",
+        abstract: "This site provides management of income/outcome of cash. The front-end Javascript was written in ReactJS. Also, I'm taking down creating backend with Python Django Restframework and interating with frontend.",
+        description:[
+          {
+            type: "paragraph",
+            header: "Duration",
+            contents:"Frontend: 8 hours. Taking down creating backend and combining with frontend."
+          },
+          {
+            type: "paragraph",
+            header: "Used Technologies",
+            contents:"HTML(Bootstrap4), CSS, JavaScript (jQuery and ReactJS), Python (Django Restframework)"
+          },
+           
+        ],
+        images:[
+          "test2"
+        ]
       }
 
       ]
